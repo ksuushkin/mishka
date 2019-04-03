@@ -5,8 +5,107 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-img" width="86" height="35" src="http://placehold.it/86x35" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggler">
+          <p class="visually-hidden">Открыть меню</p>
+        </button>
+        <div class="main-nav__wraper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <div class="intro intro--main">
+        <h1 class="intro__title">
+          Милые штучки ручно работы для дома
+        </h1>
+        <div class="categories">
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a class="categories__link" href="#">Предметы интерьера</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Детские игрушки</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <section class="promo">
+        <h2 class="promo__title">Вязаные корзинки</h2>
+        <h3 class="promo__subtitle">Товар недели</h3>
+        <p class="promo__text">
+          Экологически чистая пряжа, ручная работа.
+          Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="promo__table">
+          <tr class="promo__table-row">
+            <td class="promo__option">Цвет:</td>
+            <td class="promo__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="promo__table-row">
+            <td class="promo__option">Диаметр:</td>
+            <td class="promo__value">25 см</td>
+          </tr>
+          <tr class="promo__table-row">
+            <td class="promo__option">Высота:</td>
+            <td class="promo__value">15 см</td>
+          </tr>
+        </table>
+        <img class="promo__image" width="260" height="315" src="http://placehold.it/260x315" alt="Фотография товара недели"></img>
+        <span class="promo__price">Цена: 990 руб.</span>
+        <a class="promo__btn btn" href="#">Заказать</a>
+      </section>
+
+      <section class="features">
+        <h2 class="features__title">Коротоко о нас:</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--eco">Поддержка отечественного производителя</li>
+          <li class="features__item features__item--price">Скандинавский стиль по российской цене</li>
+          <li class="features__item features__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="features__item features__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="features__item features__item--patriot">Поддержка отечественного производителя</li>
+          <li class="features__item features__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text" href="https://htmlacademy.ru/">Разработано</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
