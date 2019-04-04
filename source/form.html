@@ -2,33 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>HTML Academy: Мишка | Форма заказа</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link">
+      <a class="page-header__logo">
         <img class="page-header__logo-img" width="86" height="35" src="http://placehold.it/86x35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggler">
-          <p class="visually-hidden">Открыть меню</p>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wraper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -50,8 +48,8 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/">Разработано</a>
-          <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="HTML Academy"></a>
         </div>
       </div>
     </footer>
