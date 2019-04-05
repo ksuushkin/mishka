@@ -40,12 +40,12 @@
         <ul class="catalog__list">
 
           <li class="catalog__item product">
-            <a class="product___link">
+            <a class="product__link">
               <img width="260" height="195" src="http://placehold.it/260x195"></img>
             </a>
             <div class="product__info">
               <div class="product__top-wrapper">
-                <a class="product___title-link" href="#">
+                <a class="product__title-link" href="#">
                   <h3 class="product__title">Зайчик-попрыгайчик</h3>
                 </a>
                 <p class="product__stats">Рост 30 см, вес 200 г</p>
@@ -58,11 +58,11 @@
           </li>
 
           <li class="catalog__item product">
-            <a class="product___link">
+            <a class="product__link">
               <img width="260" height="195" src="http://placehold.it/260x195"></img>
             </a>
             <div class="product__top-wrapper">
-              <a class="product___title-link" href="#">
+              <a class="product__title-link" href="#">
                 <h3 class="product__title">Корзинка для белья</h3>
               </a>
               <p class="product__stats">Диаметр 15 см, высота 10 см</p>
@@ -74,11 +74,11 @@
           </li>
 
           <li class="catalog__item product">
-            <a class="product___link" href="#">
+            <a class="product__link" href="#">
               <img width="260" height="195" src="http://placehold.it/260x195"></img>
             </a>
             <div class="product__top-wrapper">
-              <a class="product___title-link">
+              <a class="product__title-link">
                 <h3 class="product__title">Большая корзинка для игрушек</h3>
               </a>
               <p class="product__stats">Диаметр 30 см, высота 30 см</p>
@@ -90,6 +90,20 @@
           </li>
 
         </ul>
+      </section>
+
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__player player">
+          <img class="player__screen" width="260" height="150" src="http://placehold.it/260x150">
+          <button class="player__btn visually-hidden">Воспроизвести</button>
+        </div>
+        <p class="production__about">
+          По просьбам наших любимых фолловеров
+          мы сняли для вас подробное видео о том,
+          как появляются наши товары.
+        </p>
+        <a class="production__btn btn" href="#">Сделать заказ</a>
       </section>
     </main>
 
@@ -107,13 +121,14 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="HTML Academy"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="HTML Academy">
+            Разработано
+          </a>
         </div>
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal--to-cart">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form size" action="https://echo.htmlacademy.ru" method="get">
