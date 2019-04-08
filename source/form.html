@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка | Форма заказа</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -48,19 +49,14 @@
             <ul class="order-form__item-list radio-list">
 
               <li class="radio-list__item">
-                <label class="radio-list__label">
-                  <input class="radio-list__input" type="radio" name="type" checked>
-                  <span class="radio-list__name-text">Аксессуар для интерьера</span>
-                </label>
+                <input class="radio-list__input" type="radio" name="type" id="accesory" value="accesory" checked>
+                <label class="radio-list__label" for="accesory">Аксессуар для интерьера</label>
               </li>
 
               <li class="radio-list__item">
-                <label class="radio-list__label">
-                  <input class="radio-list__input" type="radio" name="type">
-                  <span class="radio-list__name-text">Детская игрушка</span>
-                </label>
+                <input class="radio-list__input" type="radio" name="type" id="toy" value="toy">
+                <label class="radio-list__label" for="toy">Детская игрушка</label>
               </li>
-
             </ul>
           </div>
         </fieldset>
@@ -72,45 +68,33 @@
             <ul class="order-form__item-list checkbox-list">
 
               <li class="checkbox-list__item">
-                <label class="checkbox-list__label">
-                  <input class="checkbox-list__input" type="checkbox" checked>
-                  <span class="checkbox-list__name-text">Белый</span>
-                </label>
+                <input class="checkbox-list__input" type="checkbox" id="white" value="white" checked>
+                <label class="checkbox-list__label" for="white">Белый</label>
               </li>
 
               <li class="checkbox-list__item">
-                <label class="checkbox-list__label">
-                  <input class="checkbox-list__input" type="checkbox" checked>
-                  <span class="checkbox-list__name-text">Серый</span>
-                </label>
+                <input class="checkbox-list__input" type="checkbox" id="grey" value="grey" checked>
+                <label class="checkbox-list__label" for="grey">Серый</label>
               </li>
 
               <li class="checkbox-list__item">
-                <label class="checkbox-list__label">
-                  <input class="checkbox-list__input" type="checkbox">
-                  <span class="checkbox-list__name-text">«Тиффани»</span>
-                </label>
+                <input class="checkbox-list__input" type="checkbox" id="tiffany" value="tiffany">
+                <label class="checkbox-list__label" for="tiffany">«Тиффани»</label>
               </li>
 
               <li class="checkbox-list__item">
-                <label class="checkbox-list__label">
-                  <input class="checkbox-list__input" type="checkbox">
-                  <span class="checkbox-list__name-text">Черный</span>
-                </label>
+                <input class="checkbox-list__input" type="checkbox" id="black" value="black">
+                <label class="checkbox-list__label" for="black">Черный</label>
               </li>
 
               <li class="checkbox-list__item">
-                <label class="checkbox-list__label">
-                  <input class="checkbox-list__input" type="checkbox">
-                  <span class="checkbox-list__name-text">Розовый</span>
-                </label>
+                <input class="checkbox-list__input" type="checkbox" id="pink" value="pink">
+                <label class="checkbox-list__label" for="pink">Розовый</label>
               </li>
 
               <li class="checkbox-list__item">
-                <label class="checkbox-list__label">
-                  <input class="checkbox-list__input" type="checkbox">
-                  <span class="checkbox-list__name-text">Оранжевый</span>
-                </label>
+                <input class="checkbox-list__input" type="checkbox" id="orange" value="orange">
+                <label class="checkbox-list__label" for="orange">Оранжевый</label>
               </li>
             </ul>
           </div>
