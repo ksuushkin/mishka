@@ -1,0 +1,17 @@
+@mixin font-set($size: $font-size, $height: $line-height, $weight: null) {
+  font-size: $size;
+  line-height: floor($height / $size * 100) / 100;
+  font-weight: $weight;
+}
+
+@mixin transition($property, $time, $transition) {
+  transition-property: $property;
+  transition-duration: $time;
+  transition-timing-function: $transition;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
