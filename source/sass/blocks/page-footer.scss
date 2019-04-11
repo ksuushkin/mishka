@@ -5,6 +5,6 @@
 .page-footer__copyright {
   background-color: $color-bg;
   margin: 0 30px;
-  height: 80px;
-  border-top: 2px solid $grey--lighter;
+  min-height: 80px;
+  border-top: $boder;
 }

@@ -13,14 +13,16 @@ $color-primary--darker: #56c3b2;
 $color-primary--dark: #59d5bc;
 $color-primary: #63d1bb;
 $color-primary--light: #62d1ba;
-$color-primary--lighter: #c8ece7;  // rgba(70, 193, 174, 0.3);
 
 $grey--darker: #bfc0c0;
 $grey--dark: #c6c6c6;
-$grey: #c7c7c7;            // rgba(68, 68, 68, 0.3)
-$grey--light: #e6e6e6;
-$grey--lighter: #ececec;
-$grey--lightest: #f1f1f1;
+$grey: #e6e6e6;
+$grey--light: #ececec;
+
+$boder-width: 1px;
+$boder-type: solid;
+$boder-color: $grey--light;
+$boder:$boder-width $boder-type $boder-color;
 
 $screen-tablet: 768px;
 $screen-desktop: 1200px;

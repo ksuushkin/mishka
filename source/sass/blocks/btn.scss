@@ -19,6 +19,6 @@
 
   &:active {
     background-color: $color-font;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($white, 0.3);
   }
 }

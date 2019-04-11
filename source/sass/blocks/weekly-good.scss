@@ -1,5 +1,6 @@
 .weekly-good__wrapper {
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .weekly-good__info {
@@ -28,13 +29,13 @@
 
 .weekly-good__option {
   padding: 0;
-  border-bottom: 2px solid $grey--lighter;
+  border-bottom: $boder;
 }
 
 .weekly-good__value {
   padding: 0;
   padding-left: 31px;
-  border-bottom: 2px solid $grey--lighter;
+  border-bottom: $boder;
 }
 
 .weekly-good__image {
