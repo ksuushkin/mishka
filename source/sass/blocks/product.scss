@@ -1,0 +1,26 @@
+.product__title {
+  @include font-set(17px, 24px, bold);
+  color: $black;
+}
+
+.product__stats {
+  @include font-set(13px, 30px);
+  color: $color-font;
+}
+
+.product__info {
+  border: $boder;
+}
+
+.product__top-wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.product__bottom-wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: $boder;
+}

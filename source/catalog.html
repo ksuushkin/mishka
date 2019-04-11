@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка | Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-img" width="86" height="35" src="http://placehold.it/86x35" alt="Мишка">
+        <img class="page-header__logo-img" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggler">
@@ -41,7 +42,7 @@
 
           <li class="catalog__item product">
             <a class="product__link">
-              <img width="260" height="195" src="http://placehold.it/260x195"></img>
+              <img width="260" height="195" src="img/photo-hare-mobile@1x.jpg"></img>
             </a>
             <div class="product__info">
               <div class="product__top-wrapper">
@@ -59,33 +60,37 @@
 
           <li class="catalog__item product">
             <a class="product__link">
-              <img width="260" height="195" src="http://placehold.it/260x195"></img>
+              <img width="260" height="195" src="img/photo-bowl-mobile@1x.jpg"></img>
             </a>
-            <div class="product__top-wrapper">
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Корзинка для белья</h3>
-              </a>
-              <p class="product__stats">Диаметр 15 см, высота 10 см</p>
-            </div>
-            <div class="product__bottom-wrapper">
-              <span class="product__price">690 руб.</span>
-              <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
+            <div class="product__info">
+              <div class="product__top-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Корзинка для белья</h3>
+                </a>
+                <p class="product__stats">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="product__bottom-wrapper">
+                <span class="product__price">690 руб.</span>
+                <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
+              </div>
             </div>
           </li>
 
           <li class="catalog__item product">
             <a class="product__link" href="#">
-              <img width="260" height="195" src="http://placehold.it/260x195"></img>
+              <img width="260" height="195" src="img/photo-toys-mobile@1x.jpg"></img>
             </a>
-            <div class="product__top-wrapper">
-              <a class="product__title-link">
-                <h3 class="product__title">Большая корзинка для игрушек</h3>
-              </a>
-              <p class="product__stats">Диаметр 30 см, высота 30 см</p>
-            </div>
-            <div class="product__bottom-wrapper">
-              <span class="product__price">1500 руб.</span>
-              <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
+            <div class="product__info">
+              <div class="product__top-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Большая корзинка для игрушек</h3>
+                </a>
+                <p class="product__stats">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product__bottom-wrapper">
+                <span class="product__price">1500 руб.</span>
+                <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
+              </div>
             </div>
           </li>
 
@@ -96,14 +101,16 @@
         <h2 class="production__title">Процесс производства</h2>
         <div class="production__player player">
           <img class="player__screen" width="260" height="150" src="http://placehold.it/260x150">
-          <button class="player__btn visually-hidden">Воспроизвести</button>
+          <button class="player__btn">Воспроизвести</button>
         </div>
-        <p class="production__about">
-          По просьбам наших любимых фолловеров
-          мы сняли для вас подробное видео о том,
-          как появляются наши товары.
-        </p>
-        <a class="production__btn btn" href="#">Сделать заказ</a>
+        <div class="production__info">
+          <p class="production__about">
+            По просьбам наших любимых фолловеров
+            мы сняли для вас подробное видео о том,
+            как появляются наши товары.
+          </p>
+          <a class="production__btn btn" href="#">Сделать заказ</a>
+        </div>
       </section>
     </main>
 
@@ -146,7 +153,7 @@
             <label class="size__label" for="l-size">l</label>
           </li>
         </ul>
-        <button class="modal__button  btn" type="submit">Добавить</button>
+        <button class="modal__button  btn btn--blue" type="submit">Добавить</button>
       </form>
     </section>
   </body>

@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка | Форма заказа</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-img" width="86" height="35" src="http://placehold.it/86x35" alt="Мишка">
+        <img class="page-header__logo-img" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggler">
@@ -18,7 +19,7 @@
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <a class="site-list__link" href="order-form.html">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Поиск по сайту</a>
@@ -35,91 +36,74 @@
       <div class="intro">
         <h1 class="intro__title">Вязание на заказ</h1>
       </div>
-      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form__text">
+      <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="order-form__text">
           Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
 
 
-        <fieldset class="form__fieldset">
-          <div class="form__inner">
-            <legend class="form__legend">Тип</legend>
-            <ul class="form__item-list radio">
+        <fieldset class="order-form__fieldset">
+          <div class="order-form__inner">
+            <legend class="order-form__legend">Тип</legend>
+            <ul class="order-form__item-list radio-list">
 
-              <li class="radio__item">
-                <label class="radio__label">
-                  <input class="radio__input" type="radio" name="type" checked>
-                  <span class="radio__name-text">Аксессуар для интерьера</span>
-                </label>
+              <li class="radio-list__item">
+                <input class="radio-list__input" type="radio" name="type" id="accesory" value="accesory" checked>
+                <label class="radio-list__label" for="accesory">Аксессуар для интерьера</label>
               </li>
 
-              <li class="radio__item">
-                <label class="radio__label">
-                  <input class="radio__input" type="radio" name="type">
-                  <span class="radio__name-text">Детская игрушка</span>
-                </label>
-              </li>
-
-            </ul>
-          </div>
-        </fieldset>
-
-
-        <fieldset class="form__fieldset">
-          <div class="form__inner">
-            <legend class="form__legend">Цвет</legend>
-            <ul class="form__item-list checkbox">
-
-              <li class="checkbox__item">
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox" checked>
-                  <span class="checkbox__name-text">Белый</span>
-                </label>
-              </li>
-
-              <li class="checkbox__item">
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox" checked>
-                  <span class="checkbox__name-text">Серый</span>
-                </label>
-              </li>
-
-              <li class="checkbox__item">
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__name-text">«Тиффани»</span>
-                </label>
-              </li>
-
-              <li class="checkbox__item">
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__name-text">Черный</span>
-                </label>
-              </li>
-
-              <li class="checkbox__item">
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__name-text">Розовый</span>
-                </label>
-              </li>
-
-              <li class="checkbox__item">
-                <label class="checkbox__label">
-                  <input class="checkbox__input" type="checkbox">
-                  <span class="checkbox__name-text">Оранжевый</span>
-                </label>
+              <li class="radio-list__item">
+                <input class="radio-list__input" type="radio" name="type" id="toy" value="toy">
+                <label class="radio-list__label" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset">
-          <div class="form__inner">
-            <legend class="form__legend">ФИО</legend>
-            <ul class="form__item-list field">
+
+        <fieldset class="order-form__fieldset">
+          <div class="order-form__inner">
+            <legend class="order-form__legend">Цвет</legend>
+            <ul class="order-form__item-list checkbox-list">
+
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" id="white" value="white" checked>
+                <label class="checkbox-list__label" for="white">Белый</label>
+              </li>
+
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" id="grey" value="grey" checked>
+                <label class="checkbox-list__label" for="grey">Серый</label>
+              </li>
+
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" id="tiffany" value="tiffany">
+                <label class="checkbox-list__label" for="tiffany">«Тиффани»</label>
+              </li>
+
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" id="black" value="black">
+                <label class="checkbox-list__label" for="black">Черный</label>
+              </li>
+
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" id="pink" value="pink">
+                <label class="checkbox-list__label" for="pink">Розовый</label>
+              </li>
+
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" id="orange" value="orange">
+                <label class="checkbox-list__label" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="order-form__fieldset">
+          <div class="order-form__inner">
+            <legend class="order-form__legend">ФИО</legend>
+            <ul class="order-form__item-list field">
               <li class="field__item">
                 <label class="field__name" for="name">Имя:</label>
                 <input class="field__input" id="name" type="text" placeholder="Введите ваше имя*">
@@ -136,39 +120,39 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset">
-          <div class="form__inner">
-            <legend class="form__legend">тел</legend>
-            <div class="form__item conacts-field">
+        <fieldset class="order-form__fieldset">
+          <div class="order-form__inner">
+            <legend class="order-form__legend">тел</legend>
+            <div class="order-form__item conacts-field">
               <label class="conacts-field__name conacts-field__name--phone" for="phone"></label>
               <input class="conacts-field__input" id="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset">
-          <div class="form__inner">
-            <legend class="form__legend">E-mail</legend>
-            <div class="form__item conacts-field">
+        <fieldset class="order-form__fieldset">
+          <div class="order-form__inner">
+            <legend class="order-form__legend">E-mail</legend>
+            <div class="order-form__item conacts-field">
               <label class="conacts-field__name conacts-field__name--email" for="email"></label>
               <input class="conacts-field__input" id="email" type="email" placeholder="Ваш Email*">
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset">
-          <div class="form__inner">
-            <legend class="form__legend">Доп</legend>
-            <div class="form__item textarea">
+        <fieldset class="order-form__fieldset">
+          <div class="order-form__inner">
+            <legend class="order-form__legend">Доп</legend>
+            <div class="order-form__item textarea">
               <label class="textarea__name" for="textarea"></label>
               <textarea class="textarea__input" id="textarea" name="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
         </fieldset>
 
-        <div class="form__order">
-          <span class="form__footnote"><sup>*</sup>Поля обязательны для заполнения</span>
-          <button class="form__btn btn" type="submit">Отправить заказ</button>
+        <div class="order-form__footer">
+          <span class="order-form__footnote"><sup>*</sup>Поля обязательны для заполнения</span>
+          <button class="order-form__btn btn" type="submit">Отправить заказ</button>
         </div>
       </form>
     </main>

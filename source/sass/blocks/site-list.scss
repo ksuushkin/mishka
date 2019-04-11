@@ -1,0 +1,14 @@
+.site-list {
+  @include font-set(17px, 24px, bold);
+  @include list-reset;
+}
+
+.site-list__link {
+  color: $black;
+}
+
+.site-list__item {
+  padding-left: 76px;
+  min-height: 79px;
+  box-shadow: 0 1px 0 0 $grey--light, inset 0 1px 0 0 $grey--light;
+}

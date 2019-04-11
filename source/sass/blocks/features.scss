@@ -1,0 +1,16 @@
+.features__wrapper {
+  padding: 0 30px;
+}
+
+.features__title {
+  @include font-set(25px, 30px, bold);
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  @include font-set(17px, 20px, bold);
+  margin-top: 85px;
+}

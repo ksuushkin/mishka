@@ -1,0 +1,25 @@
+.categories {
+  margin-bottom: 30px;
+}
+
+.categories__list {
+  @include list-reset();
+  margin-top: 120px;
+}
+
+.categories__item {
+  @include font-set(19px, 24px, bold);
+  background-color: $color-primary;
+  min-height: 43px;
+  padding-top: 30px;
+  padding-left: 29px;
+  padding-bottom: 30px;
+}
+
+.categories__item--toy {
+  background-color: $color-primary--darker;
+}
+
+.categories__link {
+  color: $white;
+}

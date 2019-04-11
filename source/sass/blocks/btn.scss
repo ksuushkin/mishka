@@ -1,0 +1,24 @@
+.btn {
+  @include font-set(17px, 20px, bold);
+  display: block;
+  width: 260px;
+  padding: 15px 0;
+  background-color: $white;
+  color: $color-font;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $color-font;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-font;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $color-font;
+    color: rgba($white, 0.3);
+  }
+}
