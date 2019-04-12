@@ -1,0 +1,39 @@
+.order-form__text {
+  @include font-set(13px, 24px);
+  color: $color-font;
+}
+
+.order-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.order-form__inner {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 33px;
+}
+
+.order-form__legend {
+  @include font-set(17px, 16px, bold);
+  margin-bottom: 27px;
+  display: block;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.order-form__item-list {
+  @include list-reset;
+}
+
+.order-form__footer {
+  margin: 30px;
+}
+
+.order-form__footnote {
+  @include font-set(14px, 16px);
+  color: $color-font;
+  display: block;
+  margin-bottom: 30px;
+}
