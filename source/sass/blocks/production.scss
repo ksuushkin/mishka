@@ -1,0 +1,25 @@
+.production {
+  padding-left: 30px;
+  padding-right: 30px;
+  border: $border;
+}
+
+.production__title {
+  @include font-set(17px, 24px, bold);
+  color: $black;
+  margin-top: 29px;
+  margin-bottom: 26px;
+}
+
+.production__about {
+  @include font-set(13px, 24px);
+  color: $color-font;
+
+  padding-bottom: 30px;
+}
+
+.production__info {
+  margin-top: 34px;
+  margin-left: 34px;
+  margin-right: 34px;
+}
