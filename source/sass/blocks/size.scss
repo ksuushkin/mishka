@@ -1,0 +1,25 @@
+.size__list {
+  @include list-reset;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.size__item {
+  display: block;
+}
+
+.size__label {
+  display: block;
+  padding: 20px 37px;
+  text-transform: uppercase;
+  border: 2px $border-type rgba($color-font, 0.1);
+
+  &:hover,
+  &:focus {
+    border-color: rgba($color-font, 0.3);
+  }
+
+  &:active {
+    border-color: rgba($color-font, 0.3);
+  }
+}

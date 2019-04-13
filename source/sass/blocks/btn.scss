@@ -1,7 +1,6 @@
 .btn {
   @include font-set(17px, 20px, bold);
   display: block;
-  width: 260px;
   padding: 15px 0;
   background-color: $white;
   color: $color-font;
@@ -17,8 +16,15 @@
     color: $white;
   }
 
-  &:active {
+  &:checked {
     background-color: $color-font;
     color: rgba($white, 0.3);
   }
+}
+
+.btn--blue {
+  width: 100%;
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $white;
 }

@@ -1,0 +1,26 @@
+.contacts__title {
+  @include font-set(18px, 30px, bold);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__list {
+  @include list-reset;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__item {
+  @include font-set(15px, 30px);
+  color: $color-font;
+}
+
+.contacts__email {
+  @include font-set(15px, 30px);
+  color: $color-font;
+}
+
+.contacts__btn {
+  margin-left: 30px;
+  margin-right: 30px;
+}

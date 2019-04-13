@@ -1,0 +1,12 @@
+.textarea__input {
+  @include font-set(17px, 18px);
+  color: $color-font;
+  min-height: 142px;
+  padding: 18px;
+  box-shadow: inset 0 -2px 0 0 $black;
+  border: solid 2px $color-font;
+
+  &::placeholder {
+    color: rgba($color-font, 0.3);
+  }
+}

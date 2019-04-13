@@ -1,0 +1,26 @@
+.reviews__wrapper {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reviews__title {
+  @include font-set(25px, 30px, bold);
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  @include font-set(15px, 30px);
+  color: $color-font;
+}
+
+.reviews__author-name {
+  @include font-set(17px, 24px, bold);
+}
+
+.reviews__author-link {
+  @include font-set(17px, 30px);
+}
