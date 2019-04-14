@@ -1,13 +1,15 @@
-.contacts__title {
-  @include font-set(18px, 30px, bold);
+.contacts__wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  @include font-set(18px, 30px, bold);
 }
 
 .contacts__list {
   @include list-reset;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .contacts__item {
@@ -20,7 +22,6 @@
   color: $color-font;
 }
 
-.contacts__btn {
-  margin-left: 30px;
-  margin-right: 30px;
+.contacts__map-img {
+  background-size: 100%;
 }

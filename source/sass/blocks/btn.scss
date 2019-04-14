@@ -20,11 +20,11 @@
     background-color: $color-font;
     color: rgba($white, 0.3);
   }
-}
 
-.btn--blue {
+  &--blue {
   width: 100%;
   background-color: $color-primary;
   border-color: $color-primary;
   color: $white;
+  }
 }
