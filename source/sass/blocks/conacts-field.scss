@@ -1,3 +1,9 @@
+.conacts-field {
+  @media (min-width: $screen-tablet) {
+    width: 100%
+  }
+}
+
 .conacts-field__input {
   @include font-set(17px, 18px);
   color: $color-font;
@@ -5,10 +11,10 @@
   padding: 15px 0;
   margin-bottom: 20px;
   border: none;
-  border-bottom: 2px $border-width $black;
+  border-bottom: 2px $border-type $black;
 
   &:hover {
-    border-bottom: 2px $border-width $color-primary--light;
+    border-bottom: 2px $border-type $color-primary--light;
   }
 
   &::placeholder {

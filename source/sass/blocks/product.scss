@@ -1,15 +1,29 @@
+.product {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+  }
+}
+
+.product__info {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .product__title {
   @include font-set(17px, 24px, bold);
   color: $black;
 }
 
+.product__image {
+  display: block;
+  margin: 0 auto;
+}
+
 .product__stats {
   @include font-set(13px, 30px);
   color: $color-font;
-}
-
-.product__info {
-  border: $border;
 }
 
 .product__top-wrapper {

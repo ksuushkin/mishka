@@ -1,3 +1,20 @@
+.checkbox-list {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .checkbox-list__label {
   @include font-set(17px, 18px, bold);
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(19px, 18px, bold);
+  }
+}
+
+.checkbox-list__item {
+  @media (min-width: $screen-tablet) {
+    width:50%;
+  }
 }

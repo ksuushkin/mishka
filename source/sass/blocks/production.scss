@@ -1,7 +1,17 @@
 .production {
-  padding-left: 30px;
-  padding-right: 30px;
+  @media (min-width: $screen-tablet) {
+    width: 669px;
+  }
+}
+
+.production__wrapper {
   border: $border;
+  margin-top: 30px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .production__title {
@@ -9,6 +19,10 @@
   color: $black;
   margin-top: 29px;
   margin-bottom: 26px;
+
+  @media (min-width: $screen-tablet) {
+    order: 2;
+  }
 }
 
 .production__about {
@@ -18,8 +32,18 @@
   padding-bottom: 30px;
 }
 
+.production__player {
+  @media (min-width: $screen-tablet) {
+    order: 1;
+  }
+}
+
 .production__info {
   margin-top: 34px;
   margin-left: 34px;
   margin-right: 34px;
+
+  @media (min-width: $screen-tablet) {
+    order: 3;
+  }
 }

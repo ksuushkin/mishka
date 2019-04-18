@@ -1,19 +1,47 @@
 .weekly-good__wrapper {
-  padding: 0 30px;
-  margin: 0 auto;
+  @media (min-width: $screen-tablet) {
+    width: $screen-tablet;
+    position: relative;
+  }
+}
+
+.weekly-good__header {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .weekly-good__info {
   color: $color-font;
+
+  @media (min-width: $screen-tablet) {
+    width: 292px;
+  }
 }
 
 .weekly-good__title {
   @include font-set(25px, 30px, bold);
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(43px, 50px, bold);
+  }
 }
 
 .weekly-good__subtitle {
   @include font-set(17px, 20px, bold);
   color: $color-primary;
+  text-align: left;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 90px;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .weekly-good__text {
@@ -40,10 +68,20 @@
 
 .weekly-good__image {
   margin-bottom: 29px;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    right: 50px;
+    top: 140px;
+  }
 }
 
 .weekly-good__footer {
   color: $color-font;
+
+  @media (min-width: $screen-tablet) {
+    width: 292px;
+  }
 }
 
 .weekly-good__price {

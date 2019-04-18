@@ -1,5 +1,14 @@
 .catalog__list {
   @include list-reset;
-  padding: 0 30px;
+}
+
+.catalog__item {
   margin-top: 30px;
+  border: $border;
+}
+
+.catalog__wrapper {
+  @media (min-width: $screen-tablet) {
+    width: 669px;
+  }
 }

@@ -2,6 +2,9 @@
   @include list-reset;
   margin-top: 30px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .size__item {
@@ -10,7 +13,7 @@
 
 .size__label {
   display: block;
-  padding: 20px 37px;
+  padding: 20px 35px;
   text-transform: uppercase;
   border: 2px $border-type rgba($color-font, 0.1);
 

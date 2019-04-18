@@ -1,0 +1,14 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggler {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 30px;
+  top: 30px;
+  @media (min-width: $screen-tablet) {
+    display: none;
+  }
+}
