@@ -1,5 +1,6 @@
 .arrows {
   display: flex;
+
   @media (min-width: $screen-tablet) {
     width: 137px;
   }
@@ -11,15 +12,12 @@
   min-height: 52px;
 
   &--prev {
-    background: url(../img/icon-left-arrow.svg) center center no-repeat;
+    background: url("../img/icon-left-arrow.svg") center center no-repeat;
     width: 50%;
   }
 
   &--next {
-    background: url(../img/icon-right-arrow.svg) center center no-repeat;
+    background: url("../img/icon-right-arrow.svg") center center no-repeat;
     width: 50%;
   }
 }
-
-
-

@@ -9,7 +9,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: #ffffff url(../img/review@1x.jpg) left top no-repeat;
+    background: #ffffff url("../img/review@1x.jpg") left top no-repeat;
     margin-top: 82px;
     padding-top: 86px;
     padding-bottom: 53px;
@@ -73,6 +73,6 @@
   @media (min-width: $screen-tablet) {
     position: absolute;
     right: 50px;
-    bottom:53px;
+    bottom: 53px;
   }
 }

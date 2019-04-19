@@ -1,5 +1,6 @@
 .features__wrapper {
   padding: 0 30px;
+
   @media (min-width: $screen-tablet) {
     width: $screen-tablet;
     margin-top: 60px;
@@ -9,7 +10,7 @@
 .features__title {
   @include font-set(25px, 30px, bold);
 
-   @media (min-width: $screen-tablet) {
+  @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
   }
 }
