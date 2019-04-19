@@ -1,4 +1,12 @@
-.contacts__wrapper {
+.contacts {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__top-wrapper {
   width: $screen-tablet;
 }
 
@@ -16,6 +24,10 @@
   @media (min-width: $screen-tablet) {
     display: flex;
     padding-bottom: 61px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: column;
   }
 }
 

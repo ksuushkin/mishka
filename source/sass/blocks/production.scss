@@ -2,6 +2,10 @@
   @media (min-width: $screen-tablet) {
     width: 669px;
   }
+
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
+  }
 }
 
 .production__wrapper {

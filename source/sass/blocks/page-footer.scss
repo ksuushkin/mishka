@@ -1,15 +1,18 @@
 .page-footer {
   margin-top: 58px;
+  background-color: $color-bg;
 }
 
 .page-footer__wrapper {
-  background-color: $color-bg;
-
   @media (min-width: $screen-tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
   }
 }
 
