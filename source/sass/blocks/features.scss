@@ -34,3 +34,40 @@
     padding-right: 40px;
   }
 }
+
+
+.features__item--eco {
+  @media (min-width: $screen-tablet) {
+    order: 1;
+  }
+}
+
+.features__item--price {
+  @media (min-width: $screen-tablet) {
+    order: 3;
+  }
+}
+
+.features__item--likes {
+  @media (min-width: $screen-tablet) {
+    order: 5;
+  }
+}
+
+.features__item--handmade {
+  @media (min-width: $screen-tablet) {
+    order: 2;
+  }
+}
+
+.features__item--patriot {
+  @media (min-width: $screen-tablet) {
+    order: 4;
+  }
+}
+
+.features__item--gift {
+  @media (min-width: $screen-tablet) {
+    order: 6;
+  }
+}

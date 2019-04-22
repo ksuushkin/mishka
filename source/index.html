@@ -30,9 +30,6 @@
           <li class="site-list__item site-list__item--cart">
             <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
-          <li class="site-list__item site-list__item--delivery">
-            <a class="site-list__link" href="#">Бесплатная доставка по России</a>
-          </li>
           <li class="site-list__item site-list__item--new">
             <a class="site-list__link" href="#">Новые поступления</a>
           </li>
@@ -46,6 +43,9 @@
 
     <main class="page-main">
       <div class="intro intro--main">
+        <div class="intro__delivery-wrapper wrapper">
+          <span class="intro__delivery">Бесплатная доставка по России</span>
+        </div>
         <h1 class="intro__title">
           Милые штучки ручной работы для дома
         </h1>
@@ -110,22 +110,24 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper slider wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии
-              не набирали и близко такого количества
-              лайков, как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек
-              в Мишке, и мои фотографии сразу стали более
-              стильными, а также набирают больше лайков!
-            </p>
-            <cite class="reviews__author">
-              <b class="reviews__author-name">Анастасия Красильникова</b>
-              <span class="reviews__author-link">@misssssiskras</span>
-            </cite>
-          </blockquote>
+        <div class="reviews__wrapper wrapper">
+          <div class="reviews__items slider">
+            <h2 class="reviews__title">Отзывы</h2>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии
+                не набирали и близко такого количества
+                лайков, как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек
+                в Мишке, и мои фотографии сразу стали более
+                стильными, а также набирают больше лайков!
+              </p>
+              <cite class="reviews__author">
+                <b class="reviews__author-name">Анастасия Красильникова</b>
+                <span class="reviews__author-link">@misssssiskras</span>
+              </cite>
+            </blockquote>
+          </div>
           <div class="reviews__toggles arrows">
             <button class="arrows__item arrows__item--prev" type="button" aria-label="Предыдущий отзыв"></button>
             <button class="arrows__item arrows__item--next" type="button" aria-label="Следующий отзыв"></button>
@@ -135,7 +137,7 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__top-wrapper wrapper">
+        <div class="contacts__wrapper wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -155,9 +157,8 @@
         <div class="contacts__map">
           <img class="contacts__map-img" width="320" height="457" src="img/map-mobile@1x.jpg" alt="Мы на карте">
         </div>
-        <div class="contacts__btn-wrapper wrapper">
-          <a class="contacts__btn btn" href="#">Напишите нам</a>
-        </div>
+        <a class="contacts__btn btn" href="#">Напишите нам</a>
+
 
       </section>
     </main>

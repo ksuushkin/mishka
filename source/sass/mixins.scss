@@ -17,7 +17,6 @@
 }
 
 @mixin wrapper {
-  box-sizing: border-box;
   width: 100%;
   max-width: $screen-desktop;
   padding-left: 30px;

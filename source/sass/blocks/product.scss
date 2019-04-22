@@ -12,6 +12,7 @@
   @media (min-width: $screen-tablet) {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 }
 
@@ -23,6 +24,16 @@
 .product__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $screen-tablet) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .product__stats {
@@ -42,7 +53,7 @@
   padding-bottom: 30px;
   border-top: $border;
 
-  @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-tablet) {
     margin-top: auto;
   }
 }
