@@ -1,14 +1,125 @@
 .site-list {
   @include font-set(17px, 24px, bold);
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    @include wrapper;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: $screen-tablet;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
+  }
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 30px;
   color: $black;
+
+  &--logo {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 }
 
 .site-list__item {
   padding-left: 76px;
-  min-height: 79px;
+  padding-right: 76px;
   box-shadow: 0 1px 0 0 $grey--light, inset 0 1px 0 0 $grey--light;
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(15px, 24px, bold);
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.site-list__item--logo {
+  display: block;
+  text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    order: 1;
+    width: 320px;
+    text-align: left;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 3;
+  }
+}
+
+.site-list__item--search {
+  @media (min-width: $screen-tablet) {
+    font-size: 0;
+    width: 82px;
+    order: 2;
+    border-left: $border;
+    border-right: $border;
+    margin-left: auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 4;
+  }
+}
+
+.site-list__item--cart {
+  @media (min-width: $screen-tablet) {
+    order: 3;
+    font-size: 17px;
+    width: 264px;
+    text-align: right;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 5;
+  }
+}
+
+.site-list__item--catalog {
+  @media (min-width: $screen-tablet) {
+    order: 4;
+    width: 168px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 1;
+  }
+}
+
+.site-list__item--order {
+  @media (min-width: $screen-tablet) {
+    order: 5;
+    width: 168px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    order: 2;
+  }
+}
+
+.site-list__item--new {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+    order: 6;
+    margin-right: 60px;
+  }
+}
+
+.site-list__item--sale {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+    order: 7;
+  }
 }

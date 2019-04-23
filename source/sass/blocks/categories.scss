@@ -4,16 +4,27 @@
 
 .categories__list {
   @include list-reset();
-  margin-top: 120px;
+
+  @media (min-width: $screen-tablet) {
+    @include wrapper;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: $screen-tablet;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
+  }
 }
 
 .categories__item {
   @include font-set(19px, 24px, bold);
   background-color: $color-primary;
-  min-height: 43px;
-  padding-top: 30px;
-  padding-left: 29px;
-  padding-bottom: 30px;
+
+  @media (min-width: $screen-tablet) {
+    width: 50%;
+  }
 }
 
 .categories__item--toy {
@@ -21,5 +32,11 @@
 }
 
 .categories__link {
+  display: block;
   color: $white;
+  padding: 30px;
+
+  @media (min-width: $screen-tablet) {
+    width: 180px;
+  }
 }

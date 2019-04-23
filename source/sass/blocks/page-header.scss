@@ -1,8 +1,5 @@
 .page-header {
-  width: 320px;
-}
-
-.page-header__logo {
-  display: block;
-  text-align: center;
+  @media (min-width: $screen-tablet) {
+    z-index: 1;
+  }
 }

@@ -1,10 +1,35 @@
-.page-footer__social {
+.page-footer {
+  margin-top: 58px;
   background-color: $color-bg;
 }
 
+.page-footer__wrapper {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
+  }
+}
+
 .page-footer__copyright {
-  background-color: $color-bg;
-  margin: 0 30px;
-  min-height: 80px;
   border-top: $border;
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: $screen-tablet) {
+    width: 228px;
+  }
 }

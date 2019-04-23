@@ -1,5 +1,17 @@
 .catalog__list {
   @include list-reset;
-  padding: 0 30px;
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.catalog__item {
   margin-top: 30px;
+  border: $border;
+
+  @media (min-width: $screen-desktop) {
+    width: 316px;
+  }
 }

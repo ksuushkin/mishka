@@ -1,3 +1,7 @@
 .radio-list__label {
   @include font-set(17px, 18px, bold);
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(19px, 18px, bold);
+  }
 }

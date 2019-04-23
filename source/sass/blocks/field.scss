@@ -1,5 +1,11 @@
 .field__name {
   @include font-set(17px, 18px, bold);
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(19px, 18px, bold);
+    margin: auto;
+    margin-right: 20px;
+  }
 }
 
 .field__input {
@@ -7,15 +13,22 @@
   color: $color-font;
   width: 100%;
   padding: 15px 0;
-  margin-bottom: 20px;
   border: none;
-  border-bottom: 2px solid $black;
+  border-bottom: 2px $border-type $black;
 
   &:hover {
-    border-bottom: 2px solid $color-primary--light;
+    border-bottom: 2px $border-type $color-primary--light;
   }
 
   &::placeholder {
     color: rgba($color-font, 0.3);
+  }
+}
+
+.field__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
   }
 }

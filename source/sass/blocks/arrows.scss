@@ -1,5 +1,23 @@
+.arrows {
+  display: flex;
+
+  @media (min-width: $screen-tablet) {
+    width: 137px;
+  }
+}
+
 .arrows__item {
   background-color: $white;
   border: $border;
   min-height: 52px;
+
+  &--prev {
+    background: url("../img/icon-left-arrow.svg") center center no-repeat;
+    width: 50%;
+  }
+
+  &--next {
+    background: url("../img/icon-right-arrow.svg") center center no-repeat;
+    width: 50%;
+  }
 }

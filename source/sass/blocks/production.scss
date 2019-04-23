@@ -1,7 +1,15 @@
-.production {
-  padding-left: 30px;
-  padding-right: 30px;
+.production__wrapper {
   border: $border;
+  margin-top: 30px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: relative;
+  }
 }
 
 .production__title {
@@ -9,6 +17,17 @@
   color: $black;
   margin-top: 29px;
   margin-bottom: 26px;
+  padding-left: 90px;
+  padding-right: 90px;
+
+  @media (min-width: $screen-tablet) {
+    order: 2;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 50%;
+    margin-left: auto;
+  }
 }
 
 .production__about {
@@ -18,8 +37,32 @@
   padding-bottom: 30px;
 }
 
+.production__player {
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .production__info {
   margin-top: 34px;
   margin-left: 34px;
   margin-right: 34px;
+
+  @media (min-width: $screen-tablet) {
+    order: 3;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 50%;
+    margin-left: auto;
+  }
 }

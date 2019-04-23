@@ -1,16 +1,73 @@
 .features__wrapper {
   padding: 0 30px;
+
+  @media (min-width: $screen-tablet) {
+    width: $screen-tablet;
+    margin-top: 60px;
+  }
 }
 
 .features__title {
   @include font-set(25px, 30px, bold);
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(43px, 50px, bold);
+  }
 }
 
 .features__list {
   @include list-reset;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
   @include font-set(17px, 20px, bold);
   margin-top: 85px;
+
+  @media (min-width: $screen-tablet) {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 40px;
+  }
+}
+
+
+.features__item--eco {
+  @media (min-width: $screen-tablet) {
+    order: 1;
+  }
+}
+
+.features__item--price {
+  @media (min-width: $screen-tablet) {
+    order: 3;
+  }
+}
+
+.features__item--likes {
+  @media (min-width: $screen-tablet) {
+    order: 5;
+  }
+}
+
+.features__item--handmade {
+  @media (min-width: $screen-tablet) {
+    order: 2;
+  }
+}
+
+.features__item--patriot {
+  @media (min-width: $screen-tablet) {
+    order: 4;
+  }
+}
+
+.features__item--gift {
+  @media (min-width: $screen-tablet) {
+    order: 6;
+  }
 }
