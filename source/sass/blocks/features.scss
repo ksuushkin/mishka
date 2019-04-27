@@ -1,5 +1,6 @@
 .features__wrapper {
   padding: 0 30px;
+  padding-top: 27px;
 
   @media (min-width: $screen-tablet) {
     width: $screen-tablet;
@@ -9,6 +10,9 @@
 
 .features__title {
   @include font-set(25px, 30px, bold);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 2px;
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
@@ -26,7 +30,8 @@
 
 .features__item {
   @include font-set(17px, 20px, bold);
-  margin-top: 85px;
+  padding-top: 85px;
+  padding-right: 10px;
 
   @media (min-width: $screen-tablet) {
     box-sizing: border-box;
@@ -37,36 +42,48 @@
 
 
 .features__item--eco {
+  background: url("../img/icon-feature-flower.svg") 7px 30px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 1;
   }
 }
 
 .features__item--price {
+  background: url("../img/icon-feature-money.svg") 0 31px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 3;
   }
 }
 
 .features__item--likes {
+  background: url("../img/icon-feature-heart.svg") 7px 35px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 5;
   }
 }
 
 .features__item--handmade {
+  background: url("../img/icon-feature-ball.svg") 4px 33px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 2;
   }
 }
 
 .features__item--patriot {
+  background: url("../img/icon-feature-rocket.svg") 0 34px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 4;
   }
 }
 
 .features__item--gift {
+  background: url("../img/icon-feature-gift.svg") 3px 32px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 6;
   }

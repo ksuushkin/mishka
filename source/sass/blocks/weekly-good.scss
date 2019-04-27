@@ -1,4 +1,6 @@
 .weekly-good__wrapper {
+  padding-bottom: 41px;
+
   @media (min-width: $screen-tablet) {
     width: $screen-tablet;
     position: relative;
@@ -33,6 +35,8 @@
 
 .weekly-good__title {
   @include font-set(25px, 30px, bold);
+  margin-top: 21px;
+  margin-bottom: 2px;
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
@@ -47,6 +51,7 @@
   @include font-set(17px, 20px, bold);
   color: $color-primary;
   text-align: left;
+  text-transform: uppercase;
 
   @media (min-width: $screen-tablet) {
     display: block;
@@ -68,7 +73,8 @@
 }
 
 .weekly-good__text {
-  margin-bottom: 33px;
+  margin-bottom: 21px;
+  margin-top: 20px;
 }
 
 .weekly-good__table {
@@ -78,19 +84,23 @@
   border-collapse: collapse;
 }
 
+.weekly-good__table-row {
+  border-bottom: $border;
+}
+
 .weekly-good__option {
   padding: 0;
-  border-bottom: $border;
+  padding-top: 8px;
+  padding-bottom: 11px;
 }
 
 .weekly-good__value {
   padding: 0;
-  padding-left: 31px;
-  border-bottom: $border;
+  padding-left: 17px;
 }
 
 .weekly-good__image {
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 
   @media (min-width: $screen-tablet) {
     position: absolute;
@@ -114,5 +124,6 @@
 .weekly-good__price {
   @include font-set(17px, 24px, bold);
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
+  text-align: center;
 }

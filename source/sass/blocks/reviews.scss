@@ -1,6 +1,6 @@
 .reviews__wrapper {
-  padding-top: 60px;
-  padding-bottom: 95px;
+  padding-top: 56px;
+  padding-bottom: 50px;
 
   @media (min-width: $screen-tablet) {
     position: relative;
@@ -32,10 +32,10 @@
 
 .reviews__item {
   margin: 0;
-  margin-top: 38px;
+  padding-top: 24px;
 
   @media (min-width: $screen-tablet) {
-    margin-top: 65px;
+    padding-top: 65px;
   }
 }
 
@@ -52,7 +52,9 @@
 
 .reviews__author {
   display: block;
-  margin-top: 40px;
+  padding-top: 27px;
+  padding-bottom: 30px;
+  font-style: normal;
 }
 
 .reviews__author-name {
@@ -62,6 +64,7 @@
 .reviews__author-link {
   @include font-set(17px, 30px);
   display: block;
+  padding-top: 3px;
 }
 
 .reviews__btn {

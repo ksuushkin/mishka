@@ -27,11 +27,13 @@
 .intro__title {
   @include font-set(27px, 30px, bold);
   text-align: center;
-  padding: 93px 0;
+  padding-top: 72px;
+  padding-left: 38px;
+  padding-right: 38px;
   margin: 0;
 }
 
 .intro--main {
-  min-height: 300px;
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center center no-repeat;
+  min-height: 283px;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center -18px no-repeat;
 }

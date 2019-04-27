@@ -1,3 +1,8 @@
 .wrapper {
   @include wrapper;
 }
+
+.wrapper--zigzag {
+  background: url("../img/bg-zigzag-line.svg") no-repeat bottom;
+  background-size: auto 7px;
+}

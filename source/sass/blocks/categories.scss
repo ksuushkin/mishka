@@ -1,5 +1,5 @@
 .categories {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .categories__list {
@@ -34,7 +34,8 @@
 .categories__link {
   display: block;
   color: $white;
-  padding: 30px;
+  padding: 28px;
+  padding-bottom: 29px;
 
   @media (min-width: $screen-tablet) {
     width: 180px;
