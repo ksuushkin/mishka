@@ -22,6 +22,10 @@
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
   }
+
+  @media (min-width: $screen-desktop) {
+    @include font-set(53px, 57px, bold);
+  }
 }
 
 .reviews__items {

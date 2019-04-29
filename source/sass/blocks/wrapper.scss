@@ -19,4 +19,11 @@
     background-position-x: 19px;
     height: 18px;
   }
+
+  @media (min-width: $screen-desktop) {
+    height: 22px;
+    background-size: 100% 21px;
+    background-position-x: unset;
+    transform: scale(1, -1);
+  }
 }

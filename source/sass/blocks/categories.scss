@@ -22,6 +22,11 @@
     background-size: 100%;
     z-index: 10;
   }
+
+  @media (min-width: $screen-desktop) {
+    height: 27px;
+    background-size: 110%;
+  }
 }
 
 .categories__list {

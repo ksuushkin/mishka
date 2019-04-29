@@ -9,6 +9,7 @@
 
   @media (min-width: $screen-desktop) {
     width: $screen-desktop;
+    padding-bottom: 95px;
   }
 }
 
@@ -20,6 +21,7 @@
 
   @media (min-width: $screen-desktop) {
     align-content: flex-start;
+    padding-top: 98px;
   }
 }
 
@@ -34,6 +36,7 @@
 
   @media (min-width: $screen-desktop) {
     margin-left: 175px;
+    margin-bottom: 109px;
   }
 }
 
@@ -72,8 +75,10 @@
   @media (min-width: $screen-desktop) {
     box-sizing: border-box;
     margin-left: 0;
-    padding-left: 49px;
-    width: 175px;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 27px;
+    width: 171px;
     order: -1;
   }
 }
@@ -86,6 +91,10 @@
     @include font-set(17px, 30px);
     margin: 0;
     padding-bottom: 41px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 50px;
   }
 }
 
@@ -108,6 +117,10 @@
   padding: 0;
   padding-top: 8px;
   padding-bottom: 11px;
+
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 12px;
+  }
 }
 
 .weekly-good__value {
@@ -128,6 +141,13 @@
     top: 125px;
     width: 333px;
     height: 404px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 525px;
+    height: 636px;
+    top: 44px;
+    z-index: -1;
   }
 }
 

@@ -5,6 +5,12 @@
     width: $screen-tablet;
     margin-top: 23px;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 38px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 
 .features__title {
@@ -15,6 +21,11 @@
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
+  }
+
+  @media (min-width: $screen-desktop) {
+    @include font-set(53px, 57px, bold);
+    padding-bottom: 0;
   }
 }
 
@@ -38,6 +49,10 @@
     width: 50%;
     padding-right: 40px;
     padding-top: 112px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 56px;
   }
 }
 
