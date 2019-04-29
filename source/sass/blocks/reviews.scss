@@ -1,17 +1,17 @@
 .reviews__wrapper {
   padding-top: 56px;
   padding-bottom: 50px;
+  position: relative;
 
   @media (min-width: $screen-tablet) {
-    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     background: #ffffff url("../img/review@1x.jpg") left top no-repeat;
     margin-top: 82px;
-    padding-top: 86px;
-    padding-bottom: 53px;
+    padding-top: 78px;
+    padding-bottom: 130px;
   }
 }
 
@@ -35,7 +35,7 @@
   padding-top: 24px;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 65px;
+    padding-top: 45px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @media (min-width: $screen-tablet) {
     @include font-set(17px, 30px);
-    margin-bottom: 68px;
+    margin-bottom: 35px;
   }
 }
 
@@ -55,10 +55,18 @@
   padding-top: 27px;
   padding-bottom: 30px;
   font-style: normal;
+
+  @media (min-width: $screen-tablet) {
+    padding-bottom: 0;
+  }
 }
 
 .reviews__author-name {
   @include font-set(17px, 24px, bold);
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(18px, 24px, bold);
+  }
 }
 
 .reviews__author-link {
@@ -80,6 +88,6 @@
   @media (min-width: $screen-tablet) {
     position: absolute;
     right: 50px;
-    bottom: 53px;
+    bottom: 133px;
   }
 }

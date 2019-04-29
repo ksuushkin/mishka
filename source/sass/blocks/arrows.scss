@@ -2,7 +2,7 @@
   display: flex;
 
   @media (min-width: $screen-tablet) {
-    width: 137px;
+    width: 175px;
   }
 }
 
@@ -10,6 +10,10 @@
   background-color: $white;
   border: $border;
   min-height: 52px;
+
+  @media (min-width: $screen-tablet) {
+    border: none;
+  }
 
   &--prev {
     background: url("../img/icon-left-arrow.svg") center center no-repeat;

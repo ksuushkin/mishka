@@ -2,7 +2,21 @@
   @include wrapper;
 }
 
-.wrapper--zigzag {
+.wrapper--zigzag::after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   background: url("../img/bg-zigzag-line.svg") no-repeat bottom;
   background-size: auto 7px;
+  background-repeat: repeat-x;
+  background-position-x: 12px;
+
+  @media (min-width: $screen-tablet) {
+    background-size: 100% 16px;
+    background-position-x: 19px;
+    height: 18px;
+  }
 }

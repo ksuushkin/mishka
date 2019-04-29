@@ -18,6 +18,7 @@
   @media (min-width: $screen-desktop) {
     padding-left: 175px;
     padding-right: 50%;
+    padding-top: 45px;
   }
 }
 
@@ -27,6 +28,7 @@
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
+    padding-top: 27px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -42,7 +44,8 @@
 
   @media (min-width: $screen-tablet) {
     display: flex;
-    padding-bottom: 61px;
+    padding-bottom: 19px;
+    padding-top: 33px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -56,7 +59,9 @@
   display: flex;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
     width: 50%;
+    align-items: flex-start;
   }
 
   @media (min-width: $screen-desktop) {
@@ -73,7 +78,10 @@
   margin-left: 30px;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
     margin-left: 26px;
+    padding-bottom: 0;
+    border-bottom: $border-width $border-type $color-primary;
   }
 }
 
@@ -81,6 +89,7 @@
   margin-left: 30px;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
     margin-left: 26px;
   }
 }
@@ -91,7 +100,8 @@
   margin-bottom: 38px;
 
   @media (min-width: $screen-tablet) {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
+    text-align: center;
   }
 
   @media (min-width: $screen-desktop) {
@@ -105,6 +115,11 @@
 
 .contacts__map-img {
   background-size: 100%;
+
+  @media (min-width: $screen-tablet) {
+    width: 768px;
+    height: 457px;
+  }
 }
 
 .contacts__btn {
@@ -114,6 +129,7 @@
   margin: 0 auto;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 20px, bold);
     width: 230px;
   }
 
