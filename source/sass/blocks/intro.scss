@@ -3,12 +3,40 @@
   min-height: 177px;
 
   @media (min-width: $screen-tablet) {
+    position: relative;
     margin-top: -70px;
     border-top: $border;
   }
 
   @media (min-width: $screen-desktop) {
     margin-top: -70px;
+  }
+}
+
+.intro::before {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 22px;
+    left: 0;
+    bottom: -12px;
+    content: "";
+    background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
+    background-size: 100%;
+    z-index: 10;
+  }
+
+  @media (min-width: $screen-desktop) {
+    height: 27px;
+  }
+}
+
+.intro--main::before {
+  @media (min-width: $screen-tablet) {
+    display: none;
   }
 }
 
@@ -39,11 +67,19 @@
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
-    padding-top: 112px;
+    padding-top: 54px;
+    padding-bottom: 79px;
   }
 
   @media (min-width: $screen-desktop) {
     @include font-set(53px, 57px, bold);
+    padding-bottom: 101px;
+  }
+}
+
+.intro__title--main {
+  @media (min-width: $screen-tablet) {
+    padding-top: 112px;
   }
 }
 
