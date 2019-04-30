@@ -8,23 +8,31 @@
   </head>
   <body>
     <header class="page-header">
-      <ul class="main-nav__list site-list">
+      <nav class="main-nav">
+        <button class="main-nav__toggler">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--logo">
             <a class="site-list__link site-list__link--logo" href="index.html">
-              <img class="site-list__logo-img" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="site-list__logo-img" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка">
+              </picture>
             </a>
           </li>
           <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link" href="#">Каталог товаров</a>
+            <a class="site-list__link site-list__link--catalog" href="#">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--order">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <a class="site-list__link site-list__link--order" href="form.html">Вязание на заказ</a>
           </li>
           <li class="site-list__item site-list__item--search">
             <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item site-list__item--cart">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
           </li>
           <li class="site-list__item site-list__item--new">
             <a class="site-list__link" href="#">Новые поступления</a>
@@ -44,66 +52,76 @@
       </div>
 
       <section class="catalog">
-        <div class="catalog__wrapper wrapper">
-          <h2 class="visually-hidden">Товары магазина Мишка</h2>
-          <ul class="catalog__list">
+        <h2 class="visually-hidden">Товары магазина Мишка</h2>
+        <ul class="catalog__list wrapper">
 
-            <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" width="260" height="195" src="img/photo-hare-mobile@1x.jpg"></img>
-              </a>
-              <div class="product__info">
-                <div class="product__top-wrapper">
-                  <a class="product__title-link" href="#">
-                    <h3 class="product__title">Зайчик-попрыгайчик</h3>
-                  </a>
-                  <p class="product__stats">Рост 30 см, вес 200 г</p>
-                </div>
-                <div class="product__bottom-wrapper">
-                  <span class="product__price">1 200 руб.</span>
-                  <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
-                </div>
+          <li class="catalog__item product">
+            <a class="product__link" href="#">
+              <picture>
+                <source srcset="img/photo-hare-desktop@1x.jpg" media="(min-width: 1150px)">
+                <source srcset="img/photo-hare-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="product__image" width="260" height="195" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+              </picture>
+            <div class="product__info">
+              <div class="product__top-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Зайчик-попрыгайчик</h3>
+                </a>
+                <p class="product__stats">Рост 30 см, вес 200 г</p>
               </div>
-            </li>
-
-            <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" width="260" height="195" src="img/photo-bowl-mobile@1x.jpg"></img>
-              </a>
-              <div class="product__info">
-                <div class="product__top-wrapper">
-                  <a class="product__title-link" href="#">
-                    <h3 class="product__title">Корзинка для белья</h3>
-                  </a>
-                  <p class="product__stats">Диаметр 15 см, высота 10 см</p>
-                </div>
-                <div class="product__bottom-wrapper">
-                  <span class="product__price">690 руб.</span>
-                  <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
-                </div>
+              <div class="product__bottom-wrapper">
+                <span class="product__price">1 200 руб.</span>
+                <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" width="260" height="195" src="img/photo-toys-mobile@1x.jpg"></img>
-              </a>
-              <div class="product__info">
-                <div class="product__top-wrapper">
-                  <a class="product__title-link" href="#">
-                    <h3 class="product__title">Большая корзинка для игрушек</h3>
-                  </a>
-                  <p class="product__stats">Диаметр 30 см, высота 30 см</p>
-                </div>
-                <div class="product__bottom-wrapper">
-                  <span class="product__price">1500 руб.</span>
-                  <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
-                </div>
+          <li class="catalog__item product">
+            <a class="product__link" href="#">
+              <picture>
+                <source srcset="img/photo-bowl-desktop@1x.jpg" media="(min-width: 1150px)">
+                <source srcset="img/photo-bowl-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="product__image" width="260" height="195" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+              </picture>
+            </a>
+            <div class="product__info">
+              <div class="product__top-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Корзинка для белья</h3>
+                </a>
+                <p class="product__stats">Диаметр 15 см, высота 10 см</p>
               </div>
-            </li>
+              <div class="product__bottom-wrapper">
+                <span class="product__price">690 руб.</span>
+                <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
+              </div>
+            </div>
+          </li>
 
-          </ul>
-        </div>
+          <li class="catalog__item product">
+            <a class="product__link" href="#">
+              <picture>
+                <source srcset="img/photo-toys-desktop@1x.jpg" media="(min-width: 1150px)">
+                <source srcset="img/photo-toys-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="product__image" width="260" height="195" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+              </picture>
+
+            </a>
+            <div class="product__info">
+              <div class="product__top-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Большая корзинка для&nbsp;игрушек</h3>
+                </a>
+                <p class="product__stats">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product__bottom-wrapper">
+                <span class="product__price">1 500 руб.</span>
+                <a class="product__order-link" href="#" aria-label="добавить в корзину"></a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
       </section>
 
       <section class="production">
@@ -141,7 +159,8 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="HTML Academy">
-            Разработано
+            <span class="copyright__link-text">Разработано</span>
+            <img class="copyright__link-image" src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
       </div>

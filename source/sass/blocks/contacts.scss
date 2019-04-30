@@ -12,9 +12,13 @@
 }
 
 .contacts__wrapper {
+  padding-top: 36px;
+  padding-bottom: 23px;
+
   @media (min-width: $screen-desktop) {
     padding-left: 175px;
     padding-right: 50%;
+    padding-top: 45px;
   }
 }
 
@@ -24,6 +28,7 @@
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
+    padding-top: 27px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -35,10 +40,12 @@
 
 .contacts__list {
   @include list-reset;
+  padding-top: 11px;
 
   @media (min-width: $screen-tablet) {
     display: flex;
-    padding-bottom: 61px;
+    padding-bottom: 19px;
+    padding-top: 33px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -52,7 +59,9 @@
   display: flex;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
     width: 50%;
+    align-items: flex-start;
   }
 
   @media (min-width: $screen-desktop) {
@@ -66,17 +75,21 @@
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-left: 32px;
+  margin-left: 30px;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
     margin-left: 26px;
+    padding-bottom: 0;
+    border-bottom: $border-width $border-type $color-primary;
   }
 }
 
 .contacts__adress {
-  margin-left: 32px;
+  margin-left: 30px;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
     margin-left: 26px;
   }
 }
@@ -84,10 +97,11 @@
 .contacts__map {
   width: 100%;
   height: 457px;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
+  text-align: center;
 
   @media (min-width: $screen-tablet) {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -101,14 +115,21 @@
 
 .contacts__map-img {
   background-size: 100%;
+
+  @media (min-width: $screen-tablet) {
+    width: 768px;
+    height: 457px;
+  }
 }
 
 .contacts__btn {
+  @include font-set(18px, 20px, bold);
   width: 260px;
   display: block;
   margin: 0 auto;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(17px, 20px, bold);
     width: 230px;
   }
 

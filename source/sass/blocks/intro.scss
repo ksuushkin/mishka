@@ -1,9 +1,42 @@
 .intro {
   background-color: $color-bg;
+  min-height: 177px;
 
   @media (min-width: $screen-tablet) {
-    margin-top: -85px;
+    position: relative;
+    margin-top: -70px;
     border-top: $border;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-top: -70px;
+  }
+}
+
+.intro::before {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 22px;
+    left: 0;
+    bottom: -12px;
+    content: "";
+    background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
+    background-size: 100%;
+    z-index: 10;
+  }
+
+  @media (min-width: $screen-desktop) {
+    height: 27px;
+  }
+}
+
+.intro--main::before {
+  @media (min-width: $screen-tablet) {
+    display: none;
   }
 }
 
@@ -13,7 +46,7 @@
   @media (min-width: $screen-tablet) {
     @include font-set(15px, 24px);
     display: block;
-    padding-top: 30px;
+    padding-top: 17px;
     text-align: right;
     font-weight: normal;
     width: 768px;
@@ -27,11 +60,35 @@
 .intro__title {
   @include font-set(27px, 30px, bold);
   text-align: center;
-  padding: 93px 0;
+  padding-top: 72px;
+  padding-left: 36px;
+  padding-right: 36px;
   margin: 0;
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(43px, 50px, bold);
+    padding-top: 54px;
+    padding-bottom: 79px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    @include font-set(53px, 57px, bold);
+    padding-bottom: 101px;
+  }
+}
+
+.intro__title--main {
+  @media (min-width: $screen-tablet) {
+    padding-top: 112px;
+  }
 }
 
 .intro--main {
-  min-height: 300px;
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center center no-repeat;
+  min-height: 283px;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center -18px no-repeat;
+
+  @media (min-width: $screen-tablet) {
+    background: #f9f9f9 url("../img/hero-tablet@1x.jpg") center 0 no-repeat;
+    min-height: 626px;
+  }
 }

@@ -8,23 +8,31 @@
   </head>
   <body>
     <header class="page-header">
-      <ul class="main-nav__list site-list">
+      <nav class="main-nav">
+        <button class="main-nav__toggler">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--logo">
             <a class="site-list__link site-list__link--logo" href="index.html">
-              <img class="site-list__logo-img" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="site-list__logo-img" width="86" height="35" src="img/logo-mobile.svg" alt="Мишка">
+              </picture>
             </a>
           </li>
           <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--order">
-            <a class="site-list__link" href="#">Вязание на заказ</a>
+            <a class="site-list__link site-list__link--order" href="#">Вязание на заказ</a>
           </li>
           <li class="site-list__item site-list__item--search">
             <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item site-list__item--cart">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
           </li>
           <li class="site-list__item site-list__item--new">
             <a class="site-list__link" href="#">Новые поступления</a>
@@ -33,7 +41,6 @@
             <a class="site-list__link" href="#">Распродажа</a>
           </li>
         </ul>
-      </nav>
     </header>
 
 
@@ -181,7 +188,8 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="HTML Academy">
-            Разработано
+            <span class="copyright__link-text">Разработано</span>
+            <img class="copyright__link-image" src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
           </a>
         </div>
       </div>

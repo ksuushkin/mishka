@@ -1,9 +1,13 @@
 .catalog__list {
-  @include list-reset;
+  list-style: none;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 80px;
+  }
 
   @media (min-width: $screen-desktop) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -11,7 +15,18 @@
   margin-top: 30px;
   border: $border;
 
+  @media (min-width: $screen-tablet) {
+    margin-top: 52px;
+  }
+
   @media (min-width: $screen-desktop) {
     width: 316px;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__item:not(:nth-child(3n)) {
+  @media (min-width: $screen-desktop) {
+    margin-right: 50px;
   }
 }

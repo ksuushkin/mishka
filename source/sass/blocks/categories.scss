@@ -1,5 +1,32 @@
 .categories {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  background: #f9f9f9;
+
+  @media (min-width: $screen-tablet) {
+    position: relative;
+  }
+}
+
+.categories::before {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 22px;
+    left: 0;
+    bottom: -12px;
+    content: "";
+    background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
+    background-size: 100%;
+    z-index: 10;
+  }
+
+  @media (min-width: $screen-desktop) {
+    height: 27px;
+    background-size: 110%;
+  }
 }
 
 .categories__list {
@@ -23,7 +50,32 @@
   background-color: $color-primary;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(20px, 30px, bold);
     width: 50%;
+    position: relative;
+  }
+}
+
+.categories__item::before {
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 62px;
+    top: 29px;
+    right: 36px;
+    background: url("../img/icon-interior.svg") center center no-repeat;
+    opacity: 0.5;
+  }
+}
+
+.categories__item--toy::before {
+  @media (min-width: $screen-tablet) {
+    width: 60px;
+    height: 60px;
+    top: 31px;
+    right: 35px;
+    background: url("../img/icon-toy.svg") center center no-repeat;
   }
 }
 
@@ -34,9 +86,12 @@
 .categories__link {
   display: block;
   color: $white;
-  padding: 30px;
+  padding: 28px;
+  padding-bottom: 29px;
 
   @media (min-width: $screen-tablet) {
     width: 180px;
+    padding-top: 29px;
+    padding-left: 35px;
   }
 }

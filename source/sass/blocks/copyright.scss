@@ -1,10 +1,13 @@
 .copyright__link {
   @include font-set(19px, 18px, bold);
   color: $black;
+  display: flex;
+}
 
-  @media (min-width: $screen-tablet) {
-    display: block;
-    padding-top: 64px;
-    padding-bottom: 59px;
-  }
+.copyright__link-text {
+  padding-top: 5px;
+}
+
+.copyright__link-image {
+  margin-left: 30px;
 }

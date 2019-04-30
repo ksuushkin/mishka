@@ -1,17 +1,31 @@
 .features__wrapper {
-  padding: 0 30px;
+  padding-top: 27px;
 
   @media (min-width: $screen-tablet) {
     width: $screen-tablet;
-    margin-top: 60px;
+    margin-top: 23px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 38px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 
 .features__title {
   @include font-set(25px, 30px, bold);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 2px;
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
+  }
+
+  @media (min-width: $screen-desktop) {
+    @include font-set(53px, 57px, bold);
+    padding-bottom: 0;
   }
 }
 
@@ -26,48 +40,75 @@
 
 .features__item {
   @include font-set(17px, 20px, bold);
-  margin-top: 85px;
+  padding-top: 85px;
+  padding-right: 10px;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(20px, 22px, bold);
     box-sizing: border-box;
     width: 50%;
     padding-right: 40px;
+    padding-top: 112px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 56px;
   }
 }
 
 
 .features__item--eco {
+  background: url("../img/icon-feature-flower.svg") 7px 30px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 1;
+    padding-top: 101px;
+    background-position: 8px 48px;
   }
 }
 
 .features__item--price {
+  background: url("../img/icon-feature-money.svg") 0 31px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 3;
+    background-position: 0 59px;
   }
 }
 
 .features__item--likes {
+  background: url("../img/icon-feature-heart.svg") 7px 35px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 5;
+    background-position: 8px 63px;
   }
 }
 
 .features__item--handmade {
+  background: url("../img/icon-feature-ball.svg") 4px 33px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 2;
+    padding-top: 101px;
+    background-position: 4px 51px;
   }
 }
 
 .features__item--patriot {
+  background: url("../img/icon-feature-rocket.svg") 0 34px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 4;
+    background-position: 0 62px;
   }
 }
 
 .features__item--gift {
+  background: url("../img/icon-feature-gift.svg") 3px 32px no-repeat;
+
   @media (min-width: $screen-tablet) {
     order: 6;
+    background-position: 3px 59px;
   }
 }

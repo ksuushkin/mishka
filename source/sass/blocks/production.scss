@@ -9,6 +9,9 @@
 
   @media (min-width: $screen-desktop) {
     position: relative;
+    align-items: flex-end;
+    margin-top: 26px;
+    margin-bottom: 50px;
   }
 }
 
@@ -21,12 +24,17 @@
   padding-right: 90px;
 
   @media (min-width: $screen-tablet) {
+    @include font-set(20px, 24px, bold);
     order: 2;
   }
 
   @media (min-width: $screen-desktop) {
-    width: 50%;
-    margin-left: auto;
+    width: 230px;
+    margin-left: 80px;
+    margin-right: 57px;
+    margin-top: 100px;
+    margin-bottom: 42px;
+    padding: 0;
   }
 }
 
@@ -40,15 +48,18 @@
 .production__player {
   position: relative;
   text-align: center;
+  width: 260px;
 
   @media (min-width: $screen-tablet) {
     order: 1;
+    width: 668px;
   }
 
   @media (min-width: $screen-desktop) {
     position: absolute;
     top: 0;
     left: 0;
+    width: 682px;
   }
 }
 
@@ -62,7 +73,10 @@
   }
 
   @media (min-width: $screen-desktop) {
-    width: 50%;
-    margin-left: auto;
+    width: 230px;
+    margin-left: 80px;
+    margin-right: 57px;
+    margin-top: 0;
+    margin-bottom: 60px;
   }
 }
