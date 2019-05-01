@@ -12,6 +12,11 @@
     margin-top: 82px;
     padding-top: 78px;
     padding-bottom: 130px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: auto 456px;
+    }
   }
 }
 
