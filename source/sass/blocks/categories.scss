@@ -47,45 +47,88 @@
 
 .categories__item {
   @include font-set(19px, 24px, bold);
+  position: relative;
   background-color: $color-primary;
+  color: $white;
 
   @media (min-width: $screen-tablet) {
     @include font-set(20px, 30px, bold);
     width: 50%;
-    position: relative;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
-.categories__item::before {
-  @media (min-width: $screen-tablet) {
+.categories__item--interior {
+  &::before {
     position: absolute;
     content: "";
     width: 40px;
     height: 62px;
-    top: 29px;
+    top: 23px;
     right: 36px;
-    background: url("../img/icon-interior.svg") center center no-repeat;
+    background: $color-primary url("../img/icon-interior.svg") center center no-repeat;
     opacity: 0.5;
-  }
-}
 
-.categories__item--toy::before {
-  @media (min-width: $screen-tablet) {
-    width: 60px;
-    height: 60px;
-    top: 31px;
-    right: 35px;
-    background: url("../img/icon-toy.svg") center center no-repeat;
+    @media (min-width: $screen-tablet) {
+      top: 29px;
+    }
+  }
+
+  &:hover {
+    background-color: $color-primary--dark;
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
 .categories__item--toy {
   background-color: $color-primary--darker;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 27px;
+    background: $color-primary--darker url("../img/icon-toy.svg") center center no-repeat;
+    opacity: 0.5;
+
+    @media (min-width: $screen-tablet) {
+      top: 31px;
+      right: 35px;
+    }
+  }
+
+  &:hover {
+    background-color: $color-primary--darkest;
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .categories__link {
   display: block;
-  color: $white;
+  color: inherit;
   padding: 28px;
   padding-bottom: 29px;
 
