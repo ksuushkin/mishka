@@ -7,3 +7,14 @@
   margin-right: -51px;
   margin-top: -39px;
 }
+
+.player__screen {
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 682px;
+  }
+}

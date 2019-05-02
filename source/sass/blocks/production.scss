@@ -49,6 +49,7 @@
   position: relative;
   text-align: center;
   width: 260px;
+  margin: 0 auto;
 
   @media (min-width: $screen-tablet) {
     order: 1;
@@ -77,6 +78,6 @@
     margin-left: 80px;
     margin-right: 57px;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 }
