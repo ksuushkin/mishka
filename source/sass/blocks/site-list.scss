@@ -180,6 +180,19 @@
   }
 }
 
+.main-nav--closed {
+  .site-list__item {
+    &--catalog,
+    &--order,
+    &--search,
+    &--cart,
+    &--new,
+    &--sale {
+      display: none;
+    }
+  }
+}
+
 .site-list__logo-img {
   @media (min-width: $screen-tablet) {
     width: 113px;
