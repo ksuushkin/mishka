@@ -9,6 +9,10 @@
 }
 
 .player__screen {
+  width: 260px;
+  height: 150px;
+  display: block;
+
   @media (min-width: $screen-tablet) {
     width: 668px;
     height: 455px;
