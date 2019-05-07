@@ -21,7 +21,7 @@
     padding-right: 50%;
     padding-top: 45px;
     padding-bottom: 45px;
-    background-image: url(../img/icon-flag.svg);
+    background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: 63px 63px;
   }
@@ -91,6 +91,14 @@
     margin-left: 24px;
     height: 47px;
     padding-top: 16px;
+  }
+
+  &:hover {
+    color: $color-primary--darkest;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

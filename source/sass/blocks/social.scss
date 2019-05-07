@@ -21,18 +21,28 @@
   background-repeat: no-repeat;
 
   &--instagram {
-    background-image: url("../img/icon-insta.svg");
     width: 22px;
   }
 
   &--facebook {
-    background-image: url("../img/icon-fb.svg");
     width: 15px;
     height: 28px;
   }
 
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
     width: 23px;
+  }
+}
+
+.social__image {
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    fill: $color-primary--darkest;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

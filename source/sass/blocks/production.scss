@@ -30,7 +30,7 @@
     @include font-set(20px, 24px, bold);
     order: 2;
     margin-top: 38px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-left: 106px;
   }
 
@@ -54,9 +54,9 @@
     margin-bottom: 18px;
   }
 
-   @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-desktop) {
     margin-bottom: 29px;
-   }
+  }
 }
 
 .production__player {
@@ -106,7 +106,7 @@
     margin-bottom: 46px;
   }
 
-   @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-desktop) {
     margin-bottom: 35px;
-   }
+  }
 }

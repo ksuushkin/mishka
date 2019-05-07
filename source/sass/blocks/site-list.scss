@@ -40,6 +40,14 @@
     padding-bottom: 0;
     padding-top: 9px;
     padding-right: 20px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -72,6 +80,7 @@
 }
 
 .site-list__item {
+  position: relative;
   padding-left: 76px;
   padding-right: 76px;
   box-shadow: 0 1px 0 0 $grey--light, inset 0 1px 0 0 $grey--light;
@@ -203,4 +212,15 @@
     width: 149px;
     height: 72px;
   }
+}
+
+.site-list__icon {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 30px;
+  margin-top: -9px;
+  max-width: 21px;
+  max-height: 21px;
+  opacity: 0.2;
 }
