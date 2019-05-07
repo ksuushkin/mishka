@@ -6,9 +6,18 @@
   height: 77px;
   margin-right: -51px;
   margin-top: -39px;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
 }
 
 .player__screen {
+  width: 260px;
+  height: 150px;
+  display: block;
+
   @media (min-width: $screen-tablet) {
     width: 668px;
     height: 455px;
