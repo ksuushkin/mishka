@@ -101,6 +101,13 @@
   @media (min-width: $screen-tablet) {
     order: 4;
     background-position: 0 62px;
+    transform: translate(-5px , 0 );
+    padding-left: 5px;
+    padding-right: 36px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 53px;
   }
 }
 

@@ -34,9 +34,10 @@
   }
 }
 
-.social__image {
+.social__icon {
   width: 100%;
   height: 100%;
+  transition: all 0.2s ease;
 
   &:hover {
     fill: $color-primary--darkest;

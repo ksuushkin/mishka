@@ -24,3 +24,26 @@
     transform: scale(1, -1);
   }
 }
+
+.zigzag--white::before {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 22px;
+    left: 0;
+    bottom: -12px;
+    content: "";
+    background: url("../img/bg-zigzag-fill.svg") no-repeat top center;
+    background-size: 100%;
+    z-index: 10;
+  }
+
+  @media (min-width: $screen-desktop) {
+    height: 27px;
+    background-size: auto;
+    background-repeat: repeat-x;
+  }
+}
