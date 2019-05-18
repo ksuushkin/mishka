@@ -105,8 +105,16 @@
   padding-right: 76px;
   box-shadow: 0 1px 0 0 $grey--light, inset 0 1px 0 0 $grey--light;
 
+  &--catalog,
+  &--order,
+  &--search,
+  &--cart {
+    display: none;
+  }
+
   @media (min-width: $screen-tablet) {
     @include font-set(15px, 24px, bold);
+    display: block;
     box-shadow: none;
     padding: 0;
   }
@@ -209,15 +217,14 @@
   }
 }
 
-.main-nav--closed {
+.main-nav--opened,
+.main-nav--nojs {
   .site-list__item {
     &--catalog,
     &--order,
     &--search,
-    &--cart,
-    &--new,
-    &--sale {
-      display: none;
+    &--cart {
+      display: block;
     }
   }
 }
