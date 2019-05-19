@@ -2,6 +2,7 @@
   @include font-set(19px, 18px, bold);
   color: $black;
   display: flex;
+  justify-content: center;
 
   &:hover .copyright__link-image {
     fill: $color-primary--darkest;
