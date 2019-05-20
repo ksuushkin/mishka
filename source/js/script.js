@@ -1,19 +1,15 @@
-const orderButtonNode = document.querySelector('.weekly-good__btn');
-const orderLinkNode = document.querySelector('.product__order-link');
+const cardBtns = document.querySelectorAll('.to-cart');
 const modalNode = document.querySelector('.modal');
 const modalOverlayNode = document.querySelector('.modal-overlay');
 
-orderButtonNode.addEventListener('click', function (e) {
-  e.preventDefault();
-  modalNode.classList.add('modal--opened');
-  modalOverlayNode.classList.add('modal-overlay--opened');
-});
 
-// orderLinkNode.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   modalNode.classList.add('modal--opened');
-//   modalOverlayNode.classList.add('modal-overlay--opened');
-// });
+for (var i = 0; i < cardBtns.length; i++) {
+  cardBtns[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    modalNode.classList.add('modal--opened');
+    modalOverlayNode.classList.add('modal-overlay--opened');
+  });
+}
 
 document.body.addEventListener('keyup', function (e) {
   var key = e.keyCode;
