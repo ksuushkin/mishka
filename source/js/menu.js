@@ -1,9 +1,9 @@
-const menuNode = document.querySelector('.main-nav');
-const burgerNode = document.querySelector('.main-nav__toggler');
+const menuElement = document.querySelector('.main-nav');
+const burgerElement = menuElement.querySelector('.main-nav__toggler');
 
-menuNode.classList.remove('main-nav--nojs');
+menuElement.classList.remove('main-nav--nojs');
 
-burgerNode.addEventListener('click', function () {
-  burgerNode.classList.toggle('main-nav__toggler--opened');
-  menuNode.classList.toggle('main-nav--opened')
+burgerElement.addEventListener('click', function () {
+  burgerElement.classList.toggle('main-nav__toggler--opened');
+  menuElement.classList.toggle('main-nav--opened')
 });
