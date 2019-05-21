@@ -36,17 +36,19 @@
   padding-top: 72px;
   padding-left: 36px;
   padding-right: 36px;
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: $screen-tablet) {
     @include font-set(43px, 50px, bold);
     padding-top: 54px;
     padding-bottom: 79px;
+    max-width: $screen-tablet;
   }
 
   @media (min-width: $screen-desktop) {
     @include font-set(53px, 57px, bold);
     padding-bottom: 101px;
+    max-width: $screen-desktop;
   }
 }
 

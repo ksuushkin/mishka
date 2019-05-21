@@ -40,8 +40,10 @@
   display: block;
   transition: opacity 0.2s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
@@ -121,9 +123,14 @@
   height: 20px;
   transition: all 0.2s ease;
 
-  &:hover .product__order-image {
+  &:hover .product__order-image,
+  &:focus .product__order-image {
     fill: $color-primary;
     opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active .product__order-image {

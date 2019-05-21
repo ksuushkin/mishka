@@ -32,18 +32,23 @@
   &--twitter {
     width: 23px;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $color-primary--darkest;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
   width: 100%;
   height: 100%;
   transition: all 0.2s ease;
-
-  &:hover {
-    fill: $color-primary--darkest;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

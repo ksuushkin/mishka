@@ -32,18 +32,25 @@
     padding-top: 18px;
   }
 
-  &:hover {
-    opacity: 0.6;
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
+    outline: none;
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba($black, 0.3);
   }
 }
 
-.site-list__link:hover .site-list__icon {
+.site-list__link:hover .site-list__icon,
+.site-list__link:focus .site-list__icon {
   fill: $color-primary;
   opacity: 1;
+}
+
+.site-list__link:active .site-list__icon {
+  opacity: 0.3;
 }
 
 .site-list__link--logo {
@@ -55,7 +62,8 @@
     padding-top: 9px;
     padding-right: 20px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 

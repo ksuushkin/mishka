@@ -11,9 +11,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-font;
     color: $white;
+    outline: none;
   }
 
   &:active {

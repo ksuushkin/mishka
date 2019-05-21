@@ -4,12 +4,17 @@
   display: flex;
   justify-content: center;
 
-  &:hover .copyright__link-image {
+  &:hover .copyright__link-image,
+  &:focus .copyright__link-image {
     fill: $color-primary--darkest;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
