@@ -99,13 +99,7 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("optimize-img", gulp.series("images", "webp"));
-gulp.task("build", gulp.series(
-    "clean",
-    "copy",
-    "css",
-    "optimize-img",
-    "sprite",
-    "html"
-  ));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task ("optimize-img", gulp.parallel("images", "webp"));
+gulp.task ("pre-build", gulp.parallel("optimize-img", "css", "sprite", "html"));
+gulp.task ("build", gulp.series("clean", "copy", "pre-build"));
+gulp.task ("start", gulp.series("build", "server"));
