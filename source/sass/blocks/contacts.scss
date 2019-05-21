@@ -98,8 +98,10 @@
     padding-top: 16px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-primary--darkest;
+    outline: none;
   }
 
   &:active {
