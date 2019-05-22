@@ -100,6 +100,6 @@ gulp.task("html", function () {
 });
 
 gulp.task ("optimize-img", gulp.parallel("images", "webp"));
-gulp.task ("pre-build", gulp.parallel("optimize-img", "css", "sprite", "html"));
-gulp.task ("build", gulp.series("clean", "copy", "pre-build"));
+gulp.task ("pre-build", gulp.parallel("optimize-img", "css", "html"));
+gulp.task ("build", gulp.series("clean", "copy", "pre-build", "sprite"));
 gulp.task ("start", gulp.series("build", "server"));
