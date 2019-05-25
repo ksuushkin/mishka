@@ -1,9 +1,19 @@
 .order-form__text {
   @include font-set(13px, 24px);
   color: $color-font;
+  padding-top: 22px;
+  padding-bottom: 13px;
 
   @media (min-width: $screen-tablet) {
     @include font-set(17px, 30px);
+    padding-top: 75px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 124px;
   }
 }
 
@@ -11,25 +21,174 @@
   margin: 0;
   padding: 0;
   border: none;
+  padding-bottom: 14px;
+
+  @media (min-width: $screen-tablet) {
+    padding-bottom: 24px;
+  }
+
+  &--name {
+    @media (min-width: $screen-tablet) {
+      padding-bottom: 43px;
+    }
+  }
+}
+
+.order-form__fieldset--color {
+  background-color: $color-bg;
+  padding-bottom: 12px;
+
+  @media (min-width: $screen-tablet) {
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 22px;
+  }
+}
+
+.order-form__fieldset--phone,
+.order-form__fieldset--email {
+  padding-bottom: 0;
+
+  @media (min-width: $screen-tablet) {
+    background-color: $color-bg;
+  }
+}
+
+.order-form__fieldset--email {
+  @media (min-width: $screen-tablet) {
+    padding-top: 21px;
+    padding-bottom: 52px;
+  }
 }
 
 .order-form__inner {
-  margin-top: 33px;
+  padding-top: 16px;
+  position: relative;
 
   @media (min-width: $screen-tablet) {
     display: flex;
+    padding-top: 48px;
+
+    &::before {
+      display: none;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-left: 110px;
+    }
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 110px;
+  }
+}
+
+.order-form__inner--phone {
+    padding-top: 14px;
+
+    @media (min-width: $screen-tablet) {
+      padding-top: 48px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-right: 224px;
+      padding-top: 49px;
+    }
+  }
+
+
+.order-form__inner--email {
+  padding-top: 14px;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+      padding-right: 224px;
+    }
+}
+
+.order-form__inner--color {
+  @media (min-width: $screen-tablet) {
+    padding-right: 28px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 133px;
+  }
+}
+
+.order-form__inner--name {
+  @media (min-width: $screen-desktop) {
+      padding-right: 224px;
+    }
+}
+
+.order-form__inner--textarea {
+  @media (min-width: $screen-desktop) {
+      padding-right: 224px;
+    }
+}
+
+.order-form__inner::before {
+  position: absolute;
+  content: "";
+  width: 62%;
+  height: 1px;
+  top: 22px;
+  right: 30px;
+  background-color: #63d1bb;
+  z-index: -1;
+
+  @media (min-width: $screen-tablet) {
+    display: none;
   }
 }
 
 .order-form__legend {
   @include font-set(17px, 16px, bold);
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   display: block;
+  width: 62px;
   text-transform: uppercase;
   color: $color-primary;
+  z-index: 2;
+
+  &--email,
+  &--phone {
+    margin-bottom: 4px;
+  }
+
+  &--email {
+    width: 80px;
+    background-color: $white;
+    z-index: 10;
+  }
 
   @media (min-width: $screen-tablet) {
-    width: 166px;
+    width: 225px;
+    padding-top: 16px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 130px;
+  }
+}
+
+.order-form__legend--email,
+.order-form__legend--name {
+  @media (min-width: $screen-tablet) {
+    padding-top: 20px;
+  }
+}
+
+.order-form__legend--phone {
+  @media (min-width: $screen-tablet) {
+    padding-top: 19px;
   }
 }
 
@@ -42,12 +201,20 @@
 }
 
 .order-form__footer {
-  margin: 30px;
+  padding-bottom: 18px;
 
   @media (min-width: $screen-tablet) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: baseline;
+    padding-top: 27px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 800px;
+    padding-top: 24px;
   }
 }
 
@@ -55,5 +222,22 @@
   @include font-set(14px, 16px);
   color: $color-font;
   display: block;
+  padding-top: 2px;
   margin-bottom: 30px;
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
+    width: 50%;
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
+
+.order-form__btn {
+  width: 100%;
+
+  @media (min-width: $screen-tablet) {
+    width: 230px;
+    margin-right: auto;
+  }
 }

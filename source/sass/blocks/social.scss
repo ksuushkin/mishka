@@ -11,6 +11,12 @@
   }
 }
 
+.social__item {
+  @media (min-width: $screen-tablet) {
+    padding-top: 3px;
+  }
+}
+
 .social__item:not(:last-child) {
   margin-right: 41px;
 }

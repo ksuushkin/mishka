@@ -1,20 +1,84 @@
 .checkbox-list {
+  padding-top: 1px;
+
   @media (min-width: $screen-tablet) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 3px;
   }
 }
 
 .checkbox-list__label {
   @include font-set(17px, 18px, bold);
+  position: relative;
+  display: block;
+  width: 220px;
+  padding-left: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
 
   @media (min-width: $screen-tablet) {
     @include font-set(19px, 18px, bold);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 78px;
+  }
+}
+
+.checkbox-list__label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border: 2px solid $black;
+
+  @media (min-width: $screen-tablet) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.checkbox-list__label::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 16px;
+  top: 12px;
+  left: 8px;
+  background-image: url("../img/icon-tick.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $screen-tablet) {
+    width: 36px;
+    height: 24px;
   }
 }
 
 .checkbox-list__item {
+  padding-bottom: 24px;
+
+  &:last-child {
+    padding-bottom: 7px;
+  }
+
   @media (min-width: $screen-tablet) {
     width: 50%;
+    padding-bottom: 29px;
   }
+
+  @media (min-width: $screen-desktop) {
+    width: 33.33%;
+  }
+}
+
+.checkbox-list__input {
+  display: none;
 }

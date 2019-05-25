@@ -1,0 +1,74 @@
+.contacts-field {
+  position: relative;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
+}
+
+.contacts-field__input {
+  @include font-set(17px, 18px);
+  color: $color-font;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 19px;
+  border: none;
+  border-bottom: 2px $border-type $black;
+
+  &:hover {
+    border-bottom: 2px $border-type $color-primary--light;
+  }
+
+  &::placeholder {
+    color: rgba($color-font, 0.3);
+  }
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(19px, 18px);
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: $color-bg;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 19px;
+  }
+}
+
+.contacts-field__bg {
+  position: absolute;
+  opacity: 0.2;
+  bottom: 0;
+  right: 0;
+}
+
+.contacts-field__bg--phone {
+  right: 8px;
+  bottom: 37px;
+
+  @media (min-width: $screen-tablet) {
+    right: 26px;
+    bottom: 18px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    right: 8px;
+  }
+}
+
+.contacts-field__bg--email {
+  right: 4px;
+  bottom: 29px;
+  height: 32px;
+
+  @media (min-width: $screen-tablet) {
+    right: 22px;
+    bottom: 9px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    right: 5px;
+  }
+}

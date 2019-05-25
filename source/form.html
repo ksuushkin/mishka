@@ -63,15 +63,15 @@
         </div>
         <h1 class="intro__title">Вязание на заказ</h1>
       </div>
-      <form class="order-form wrapper" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="order-form__text">
+      <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="order-form__text wrapper">
           Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
 
 
         <fieldset class="order-form__fieldset">
-          <div class="order-form__inner">
+          <div class="order-form__inner wrapper">
             <legend class="order-form__legend">Тип</legend>
             <ul class="order-form__item-list radio-list">
 
@@ -89,8 +89,8 @@
         </fieldset>
 
 
-        <fieldset class="order-form__fieldset">
-          <div class="order-form__inner">
+        <fieldset class="order-form__fieldset order-form__fieldset--color">
+          <div class="order-form__inner wrapper order-form__inner--color">
             <legend class="order-form__legend">Цвет</legend>
             <ul class="order-form__item-list checkbox-list">
 
@@ -127,9 +127,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="order-form__fieldset">
-          <div class="order-form__inner">
-            <legend class="order-form__legend">ФИО</legend>
+        <fieldset class="order-form__fieldset order-form__fieldset--name">
+          <div class="order-form__inner order-form__inner--name wrapper">
+            <legend class="order-form__legend order-form__legend--name">ФИО</legend>
             <ul class="order-form__item-list field">
               <li class="field__item">
                 <label class="field__name" for="name">Имя:</label>
@@ -147,29 +147,35 @@
           </div>
         </fieldset>
 
-        <fieldset class="order-form__fieldset">
-          <div class="order-form__inner">
-            <legend class="order-form__legend">тел</legend>
-            <div class="order-form__item conacts-field">
-              <label class="conacts-field__name conacts-field__name--phone" for="phone"></label>
-              <input class="conacts-field__input" id="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <fieldset class="order-form__fieldset order-form__fieldset--phone">
+          <div class="order-form__inner order-form__inner--phone wrapper">
+            <legend class="order-form__legend order-form__legend--phone">тел</legend>
+            <div class="order-form__item contacts-field">
+              <label class="contacts-field__name contacts-field__name--phone" for="phone"></label>
+              <input class="contacts-field__input" id="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <svg class="contacts-field__bg contacts-field__bg--phone" width="25" height="24">
+                <use xlink:href="img/sprite.svg#sprite-icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="order-form__fieldset order-form__fieldset--email">
+          <div class="order-form__inner order-form__inner--email wrapper">
+            <legend class="order-form__legend order-form__legend--email">E-mail</legend>
+            <div class="order-form__item contacts-field">
+              <label class="contacts-field__name contacts-field__name--email" for="email"></label>
+              <input class="contacts-field__input" id="email" type="email" placeholder="Ваш Email*">
+              <svg class="contacts-field__bg contacts-field__bg--email" width="32" height="21">
+                <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
+              </svg>
             </div>
           </div>
         </fieldset>
 
         <fieldset class="order-form__fieldset">
-          <div class="order-form__inner">
-            <legend class="order-form__legend">E-mail</legend>
-            <div class="order-form__item conacts-field">
-              <label class="conacts-field__name conacts-field__name--email" for="email"></label>
-              <input class="conacts-field__input" id="email" type="email" placeholder="Ваш Email*">
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="order-form__fieldset">
-          <div class="order-form__inner">
-            <legend class="order-form__legend">Доп</legend>
+          <div class="order-form__inner order-form__inner--textarea wrapper">
+            <legend class="order-form__legend order-form__legend--textarea">Доп</legend>
             <div class="order-form__item textarea">
               <label class="textarea__name" for="textarea"></label>
               <textarea class="textarea__input" id="textarea" name="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -177,7 +183,7 @@
           </div>
         </fieldset>
 
-        <div class="order-form__footer">
+        <div class="order-form__footer wrapper">
           <span class="order-form__footnote"><sup>*</sup>Поля обязательны для заполнения</span>
           <button class="order-form__btn btn" type="submit">Отправить заказ</button>
         </div>

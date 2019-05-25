@@ -3,7 +3,7 @@
   background-color: $color-bg;
 
   @media (min-width: $screen-tablet) {
-    margin-top: 56px;
+    margin-top: 50px;
   }
 }
 
@@ -39,7 +39,8 @@
   @media (min-width: $screen-tablet) {
     display: block;
     width: 102px;
-    height: 37px;
+    height: 39px;
+    padding-bottom: 5px;
   }
 
   &:hover .page-footer__logo-image,

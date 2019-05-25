@@ -1,15 +1,24 @@
+.weekly-good {
+  @media (min-width: $screen-desktop) {
+    width: 1150px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
 .weekly-good__wrapper {
   padding-bottom: 41px;
   position: relative;
 
   @media (min-width: $screen-tablet) {
-    width: $screen-tablet;
     padding-bottom: 67px;
+    margin: 0 auto;
   }
 
   @media (min-width: $screen-desktop) {
-    width: $screen-desktop;
     padding-bottom: 95px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -147,6 +156,7 @@
     width: 525px;
     height: 636px;
     top: 44px;
+    right: 0;
     z-index: -1;
   }
 }
