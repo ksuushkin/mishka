@@ -53,7 +53,10 @@
     height: 62px;
     top: 23px;
     right: 36px;
-    background: $color-primary url("../img/icon-interior.svg") center center no-repeat;
+    background-color: $color-primary;
+    background-image: url("../img/icon-interior.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
     opacity: 0.5;
 
     @media (min-width: $screen-tablet) {
@@ -85,7 +88,10 @@
     height: 60px;
     top: 20px;
     right: 27px;
-    background: $color-primary--darker url("../img/icon-toy.svg") center center no-repeat;
+    background-color: $color-primary--darker;
+    background-image: url("../img/icon-toy.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
     opacity: 0.5;
 
     @media (min-width: $screen-tablet) {

@@ -15,8 +15,10 @@
   border: none;
   border-bottom: 2px $border-type $black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 2px $border-type $color-primary--light;
+    outline: none;
   }
 
   &::placeholder {
@@ -35,6 +37,12 @@
   @media (min-width: $screen-desktop) {
     padding-left: 19px;
   }
+}
+
+.contacts-field__input:hover + .contacts-field__bg,
+.contacts-field__input:focus + .contacts-field__bg {
+  opacity: 1;
+  fill: $color-primary--light;
 }
 
 .contacts-field__bg {

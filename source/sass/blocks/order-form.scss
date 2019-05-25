@@ -86,17 +86,17 @@
 }
 
 .order-form__inner--phone {
-    padding-top: 14px;
+  padding-top: 14px;
 
-    @media (min-width: $screen-tablet) {
-      padding-top: 48px;
-    }
-
-    @media (min-width: $screen-desktop) {
-      padding-right: 224px;
-      padding-top: 49px;
-    }
+  @media (min-width: $screen-tablet) {
+    padding-top: 48px;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 224px;
+    padding-top: 49px;
+  }
+}
 
 
 .order-form__inner--email {
@@ -107,8 +107,8 @@
   }
 
   @media (min-width: $screen-desktop) {
-      padding-right: 224px;
-    }
+    padding-right: 224px;
+  }
 }
 
 .order-form__inner--color {
@@ -123,14 +123,14 @@
 
 .order-form__inner--name {
   @media (min-width: $screen-desktop) {
-      padding-right: 224px;
-    }
+    padding-right: 224px;
+  }
 }
 
 .order-form__inner--textarea {
   @media (min-width: $screen-desktop) {
-      padding-right: 224px;
-    }
+    padding-right: 224px;
+  }
 }
 
 .order-form__inner::before {
@@ -151,22 +151,12 @@
 .order-form__legend {
   @include font-set(17px, 16px, bold);
   margin-bottom: 24px;
+  margin-top: 0;
   display: block;
   width: 62px;
   text-transform: uppercase;
   color: $color-primary;
   z-index: 2;
-
-  &--email,
-  &--phone {
-    margin-bottom: 4px;
-  }
-
-  &--email {
-    width: 80px;
-    background-color: $white;
-    z-index: 10;
-  }
 
   @media (min-width: $screen-tablet) {
     width: 225px;
@@ -175,20 +165,46 @@
   }
 
   @media (min-width: $screen-desktop) {
-    width: 130px;
+    width: 114px;
+    min-width: 114px;
   }
 }
 
-.order-form__legend--email,
 .order-form__legend--name {
   @media (min-width: $screen-tablet) {
     padding-top: 20px;
   }
 }
 
+.order-form__legend--email {
+  width: 80px;
+  background-color: $white;
+  margin-bottom: 4px;
+  z-index: 10;
+
+  @media (min-width: $screen-tablet) {
+    width: 225px;
+    padding-top: 20px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 114px;
+    padding-top: 23px;
+  }
+}
+
 .order-form__legend--phone {
+  margin-bottom: 4px;
+
   @media (min-width: $screen-tablet) {
     padding-top: 19px;
+  }
+}
+
+.order-form__legend--textarea {
+  @media (min-width: $screen-desktop) {
+    padding-top: 20px;
   }
 }
 

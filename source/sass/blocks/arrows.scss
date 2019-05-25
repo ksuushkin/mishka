@@ -10,20 +10,13 @@
   background-color: $white;
   border: $border;
   min-height: 52px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 50%;
   transition: all 0.2s ease;
 
   @media (min-width: $screen-tablet) {
     border: none;
-  }
-
-  &--prev {
-    background: url("../img/icon-left-arrow.svg") center center no-repeat;
-    width: 50%;
-  }
-
-  &--next {
-    background: url("../img/icon-right-arrow.svg") center center no-repeat;
-    width: 50%;
   }
 
   &:hover,
@@ -35,4 +28,12 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.arrows__item--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.arrows__item--next {
+  background-image: url("../img/icon-right-arrow.svg");
 }

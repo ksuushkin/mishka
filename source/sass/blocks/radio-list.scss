@@ -37,10 +37,11 @@
     left: 12px;
     background-color: $color-primary;
     border-radius: 50%;
+    display: none;
 
     @media (min-width: $screen-tablet) {
-      left: 17px;
-      top: 17px;
+      left: 18px;
+      top: 18px;
     }
   }
 
@@ -51,10 +52,28 @@
     padding-bottom: 15px;
     padding-left: 78px;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 82px;
+  }
 }
 
-.radio-list__input {
-  display: none;
+.radio-list__input:checked + .radio-list__label::after {
+  display: block;
+}
+
+.radio-list__label:hover,
+.radio-list__input:focus + .radio-list__label {
+  &::before {
+    border-color: $color-primary;
+  }
+}
+
+.radio-list__label:active {
+  &::before {
+    border-color: $color-font;
+    opacity: 0.3;
+  }
 }
 
 .radio-list__item {

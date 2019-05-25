@@ -21,4 +21,15 @@
   @media (min-width: $screen-tablet) {
     @include font-set(19px, 18px);
   }
+
+  @media (min-width: $screen-desktop) {
+    width: 702px;
+    max-width: 702px;
+  }
+}
+
+.textarea__input:hover,
+.textarea__input:focus {
+  border-color: $color-primary--light;
+  box-shadow: none;
 }
