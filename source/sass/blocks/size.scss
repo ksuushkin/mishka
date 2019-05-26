@@ -22,6 +22,10 @@
   }
 
   &:active {
-    border-color: rgba($color-font, 0.3);
+    border-color: $color-primary--light;
   }
+}
+
+.size__input:checked + .size__label {
+  border-color: $color-primary--light;
 }

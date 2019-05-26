@@ -2,13 +2,19 @@
   @include font-set(19px, 18px, bold);
   color: $black;
   display: flex;
+  justify-content: center;
 
-  &:hover .copyright__link-image {
+  &:hover .copyright__link-image,
+  &:focus .copyright__link-image {
     fill: $color-primary--darkest;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -19,4 +25,5 @@
 .copyright__link-image {
   margin-left: 30px;
   fill: $color-primary;
+  transition: all 0.2s ease;
 }

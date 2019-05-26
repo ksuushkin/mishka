@@ -15,7 +15,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: url("../img/review@1x.jpg") left top no-repeat;
+    background-image: url("../img/review@1x.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
     margin-top: 82px;
     padding-top: 78px;
     padding-bottom: 130px;

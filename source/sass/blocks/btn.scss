@@ -9,14 +9,16 @@
   text-transform: uppercase;
   border: 2px solid $color-font;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {
     background-color: $color-font;
     color: $white;
+    outline: none;
   }
 
-  &:checked {
+  &:active {
     background-color: $color-font;
     color: rgba($white, 0.3);
   }

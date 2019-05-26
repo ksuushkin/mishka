@@ -3,7 +3,7 @@
   background-color: $color-bg;
 
   @media (min-width: $screen-tablet) {
-    margin-top: 56px;
+    margin-top: 50px;
   }
 }
 
@@ -14,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 143px;
+    height: 143px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -39,19 +40,26 @@
   @media (min-width: $screen-tablet) {
     display: block;
     width: 102px;
-    height: 37px;
+    height: 39px;
+    padding-bottom: 5px;
+  }
+
+  &:hover .page-footer__logo-image,
+  &:focus .page-footer__logo-image {
+    fill: $color-primary--darkest;
+  }
+
+  &:active .page-footer__logo-image {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
 .page-footer__logo-image {
   width: 100%;
   height: 100%;
-
-  &:hover {
-    fill: $color-primary--darkest;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  transition: all 0.2s ease;
 }

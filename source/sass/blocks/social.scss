@@ -11,6 +11,12 @@
   }
 }
 
+.social__item {
+  @media (min-width: $screen-tablet) {
+    padding-top: 3px;
+  }
+}
+
 .social__item:not(:last-child) {
   margin-right: 41px;
 }
@@ -32,17 +38,23 @@
   &--twitter {
     width: 23px;
   }
-}
 
-.social__image {
-  width: 100%;
-  height: 100%;
+  &:focus {
+    outline: none;
+  }
 
-  &:hover {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: $color-primary--darkest;
   }
 
-  &:active {
+  &:active .social__icon {
     opacity: 0.3;
   }
+}
+
+.social__icon {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
 }

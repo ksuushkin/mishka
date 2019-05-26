@@ -36,6 +36,21 @@
   }
 }
 
+.product__title-link {
+  display: block;
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .product__image {
   display: block;
   margin: 0 auto;
@@ -106,8 +121,26 @@
   display: block;
   width: 20px;
   height: 20px;
+  transition: all 0.2s ease;
+
+  &:hover .product__order-image,
+  &:focus .product__order-image {
+    fill: $color-primary;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active .product__order-image {
+    opacity: 0.3;
+  }
 }
 
 .product__order-image {
+  width: 20px;
+  height: 20px;
   opacity: 0.3;
+  transition: color 0.2s ease;
 }

@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка | Каталог</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggler hamburger">
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggler">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
@@ -31,7 +34,7 @@
           <li class="site-list__item site-list__item--search">
             <a class="site-list__link" href="#">Поиск по сайту
               <svg class="site-list__icon site-list__icon--search" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="img/sprite.svg#sprite-icon-search"></use>
               </svg>
             </a>
           </li>
@@ -39,7 +42,7 @@
             <a class="site-list__link site-list__link--cart" href="#">
               Корзина: пока пуста
               <svg class="site-list__icon site-list__icon--cart" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="img/sprite.svg#sprite-icon-cart"></use>
               </svg>
             </a>
           </li>
@@ -53,7 +56,7 @@
     </header>
 
     <main class="page-main">
-      <div class="intro">
+      <div class="intro zigzag--white">
         <div class="intro__delivery-wrapper wrapper">
           <span class="intro__delivery">Бесплатная доставка по России</span>
         </div>
@@ -77,6 +80,7 @@
                 <source srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="product__image" width="260" height="195" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
               </picture>
+            </a>
             <div class="product__info">
               <div class="product__top-wrapper">
                 <a class="product__title-link" href="#">
@@ -86,9 +90,9 @@
               </div>
               <div class="product__bottom-wrapper">
                 <span class="product__price">1 200 руб.</span>
-                <a class="product__order-link" href="#" aria-label="добавить в корзину">
+                <a class="product__order-link to-cart" href="#" aria-label="добавить в корзину">
                   <svg class="product__order-image" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    <use xlink:href="img/sprite.svg#sprite-icon-cart"></use>
                   </svg>
                 </a>
               </div>
@@ -118,9 +122,9 @@
               </div>
               <div class="product__bottom-wrapper">
                 <span class="product__price">690 руб.</span>
-                <a class="product__order-link" href="#" aria-label="добавить в корзину">
+                <a class="product__order-link to-cart" href="#" aria-label="добавить в корзину">
                   <svg class="product__order-image" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    <use xlink:href="img/sprite.svg#sprite-icon-cart"></use>
                   </svg>
                 </a>
               </div>
@@ -151,9 +155,9 @@
               </div>
               <div class="product__bottom-wrapper">
                 <span class="product__price">1 500 руб.</span>
-                <a class="product__order-link" href="#" aria-label="добавить в корзину">
+                <a class="product__order-link to-cart" href="#" aria-label="добавить в корзину">
                   <svg class="product__order-image" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    <use xlink:href="img/sprite.svg#sprite-icon-cart"></use>
                   </svg>
                 </a>
               </div>
@@ -176,7 +180,7 @@
 
               <source srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x" media="(min-width: 1150px)">
               <source srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
-              <img class="player__screen" width="260" height="150" src="img/video-mobile@1x.jpg">
+              <img class="player__screen" width="260" height="150" src="img/video-mobile@1x.jpg" alt="Видео процесса производства">
             </picture>
             <button class="player__btn" aria-label="Воспроизвести"></button>
           </div>
@@ -196,28 +200,28 @@
       <div class="page-footer__wrapper social wrapper">
         <a class="page-footer__logo" href="#">
           <svg class="page-footer__logo-image" width="18" height="18">
-            <use xlink:href="img/sprite.svg#logo-footer"></use>
+            <use xlink:href="img/sprite.svg#sprite-logo-footer"></use>
           </svg>
         </a>
         <ul class="page-footer__social social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#">
-              <svg class="social__image" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              <svg class="social__icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
-              <svg class="social__image" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <svg class="social__icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">
-              <svg class="social__image" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <svg class="social__icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#sprite-icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -226,7 +230,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="HTML Academy">
             <span class="copyright__link-text">Разработано</span>
             <svg class="copyright__link-image" width="27" height="34">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#sprite-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -256,5 +260,9 @@
       </div>
       </form>
     </section>
+    <div class="modal-overlay"></div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
