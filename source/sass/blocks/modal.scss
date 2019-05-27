@@ -5,9 +5,9 @@
 
   @media (min-width: $screen-tablet) {
     width: 566px;
-    padding-right: 108px;
-    padding-left: 108px;
-    padding-top: 51px;
+    padding-right: 102px;
+    padding-left: 107px;
+    padding-top: 33px;
     padding-bottom: 46px;
   }
 }
@@ -16,6 +16,11 @@
   @include font-set(25px, 30px, bold);
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(30px, 57px, bold);
+    margin: 0;
+  }
 }
 
 .modal {
@@ -35,6 +40,16 @@
   }
 }
 
+.modal__text {
+  @media (min-width: $screen-tablet) {
+    @include font-set(17px, 30px);
+    text-align: center;
+    margin-top: 13px;
+    padding-right: 5px;
+    margin-bottom: 0;
+  }
+}
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -48,5 +63,12 @@
 
   &--opened {
     display: block;
+  }
+}
+
+.modal__form {
+  @media (min-width: $screen-tablet) {
+    padding-right: 4px;
+    padding-top: 23px;
   }
 }

@@ -4,6 +4,12 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 31px;
+  }
 }
 
 .size__item {
@@ -23,6 +29,11 @@
 
   &:active {
     border-color: $color-primary--light;
+  }
+
+  @media (min-width: $screen-tablet) {
+    @include font-set(17px, 16px, bold);
+    padding: 16px 48px;
   }
 }
 
