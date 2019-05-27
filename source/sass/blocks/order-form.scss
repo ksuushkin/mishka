@@ -82,6 +82,7 @@
 
   @media (min-width: $screen-desktop) {
     padding-left: 110px;
+    padding-right: 224px;
   }
 }
 
@@ -93,7 +94,6 @@
   }
 
   @media (min-width: $screen-desktop) {
-    padding-right: 224px;
     padding-top: 49px;
   }
 }
@@ -105,10 +105,6 @@
   @media (min-width: $screen-tablet) {
     padding-top: 0;
   }
-
-  @media (min-width: $screen-desktop) {
-    padding-right: 224px;
-  }
 }
 
 .order-form__inner--color {
@@ -118,18 +114,6 @@
 
   @media (min-width: $screen-desktop) {
     padding-right: 133px;
-  }
-}
-
-.order-form__inner--name {
-  @media (min-width: $screen-desktop) {
-    padding-right: 224px;
-  }
-}
-
-.order-form__inner--textarea {
-  @media (min-width: $screen-desktop) {
-    padding-right: 224px;
   }
 }
 
